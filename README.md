@@ -37,3 +37,7 @@ TODO: tag-value and XML. Minimal
 ## SPDX expressions in a source code file
 
 TODO: Note a variant of ESR's convention.
+
+## About this tutorial
+
+This tutorial was originally developed by [David A. Wheeler](http://www.dwheeler.com), and is released under the Creative Commons Attribution License 3.0 Unported (CC-BY-3.0) license, the same license used for the SPDX specification.  In SPDX notation, this is released under CC-BY-3.0.
