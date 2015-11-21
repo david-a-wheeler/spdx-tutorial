@@ -58,9 +58,10 @@ Note that unlike license expressions, tag names are case-sensitive.
 A few especially important tags are:
 
 * PackageName: The full name of the package as given by Package Originator.
-* PackageLicenseDeclared: The  license identified in text in one or more files (for example a COPYING or LICENSE file)
+* PackageLicenseDeclared: The license identified in text in one or more files (for example a COPYING or LICENSE file)
   in the source code package.  This field is not intended to capture license information
   obtained from an external source, such as the package website.
+* PackageHomePage: The package's home page URL.
 
 For example, a SPDX file with these lines states that this is the Foo package, and that
 the package maintainers declare that all the software in the package is released using the MIT license:
@@ -70,7 +71,9 @@ the package maintainers declare that all the software in the package is released
 
 There are a lot more details and options in the
 [SPDX specification](https://spdx.org/SPDX-specifications/spdx-version-2.0).
-Technically the specification considers many tags mandatory, but I would interpret them only as
+Many of the tags and features are useful only when exchanging SPDX files that are isolated from their packages
+and describe large collections of packages.
+In particular, the specification officially considers many tags mandatory, but I personally would interpret them only as
 "mandatory" if you are trying to exchange SPDX files that are isolated from their packages.
 
 If you are a package developer releasing software, I suggest starting with at least these two lines,
