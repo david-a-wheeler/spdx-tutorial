@@ -48,11 +48,34 @@ SPDX expressions are case-insensitive, but by convention the operation names sho
 
 ## SPDX Files
 
-https://spdx.org/SPDX-specifications/spdx-version-2.0
+SPDX files are a way to capture and exchange license information.
+The SPDX specification actually supports two formats: tag/value and RDF/XML.
+They can do the same thing, but tag/value is easier to write, so that's what we'll use here.
+A tag/value file is simply a sequence of lines, where each line is a tag name, a colon, a space, and its value.
 
- SPDX Specification supports two formats: RDF/XML and Tag/Value. There are a number of ways 
-that SPDX Documents can be created
-TODO: tag-value and XML. Minimal
+There are many tags defined in the SPDX specification, but many of them may not apply to your specific situation.
+Note that unlike license expressions, tag names are case-sensitive.
+A few especially important tags are:
+
+* PackageName: The full name of the package as given by Package Originator.
+* PackageLicenseDeclared: The  license identified in text in one or more files (for example a COPYING or LICENSE file)
+  in the source code package.  This field is not intended to capture license information
+  obtained from an external source, such as the package website.
+
+For example, a SPDX file with these lines states that this is the Foo package, and that
+the package maintainers declare that all the software in the package is released using the MIT license:
+
+    PackageName: Foo
+    PackageLicenseDeclared: MIT
+
+There are a lot more details and options in the
+[SPDX specification](https://spdx.org/SPDX-specifications/spdx-version-2.0).
+Technically the specification considers many tags mandatory, but I would interpret them only as
+"mandatory" if you are trying to exchange SPDX files that are isolated from their packages.
+
+If you are a package developer releasing software, I suggest starting with at least these two lines,
+and put them in a file named
+TODO: ??? WHAT IS A SUGGESTED FILENAME?
 
 ## SPDX expressions in a source code file
 
