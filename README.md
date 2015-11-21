@@ -28,9 +28,9 @@ The [SPDX license list](https://spdx.org/licenses/) has a much more complete lis
 In some situations there isn't just one license, e.g., software might be offered with a choice between two or more licenses.
 SPDX version 2.0 added support for SPDX *license expressions*, which let you clearly express this when you need to.
 
-A SPDX license expression can be simple SPDX license identifier
-or a SPDX "user defined license reference" (this is used if a license isn't already in the SPDX identifier).
-However, SPDX license expressions also support a "+" suffix after a license identifier, which means
+A SPDX license expression can be simple SPDX license identifier or a SPDX "user defined license reference" (aka LicenseRef).
+A LicenseRef is used if a license isn't already defined by a standard SPDX identifier.
+However, SPDX license expressions also support a "+" suffix after a license identifier; this means
 "this license or any later version".  For example, you can express "GNU General Public License (GPL) version 2.0 or later"
 using the SPDX license expression "GPL-2.0+".
 
