@@ -85,11 +85,13 @@ TODO: ??? WHAT IS A SUGGESTED FILENAME?
 You can also refer to SPDX license expressions from source code, instead of trying to
 embed large quantities of legalese in your source code headers.
 The SPDX group have not endorsed a particular way to do this, however.
-I recommend doing this in a comment near the top of the file:
+I recommend using a case-sensitive tag "SPDX-License-Expression" in a comment near the top of the file,
+followed by the SPDX license expression.  For example, in a language that uses "#" as the
+rest-of-line comment character, use this to express "this software is under GPL version 3.0 or later":
 
-    SPDX-License-Expression: *Actual SPDX license expression*
+    # SPDX-License-Expression: GPL-3.0+
 
-Note that this says license expression, not license identifier; this makes it clear that you can
+Note that this says license expression, not license identifier; this name makes it clear that you can
 use the full power of SPDX license expressions if you need to.
 
 ## More information
