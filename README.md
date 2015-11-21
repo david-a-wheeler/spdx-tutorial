@@ -92,6 +92,8 @@ use the full power of SPDX license expressions if you need to.
 ## More information
 
 For more information, visit the [SPDX website](http://spdx.org/).
+Common destinations include the
+[SPDX license list](https://spdx.org/licenses/) and the [SPDX specifications](http://spdx.org/spdx-specifications).
 
 ## About this tutorial
 
