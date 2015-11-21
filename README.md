@@ -77,9 +77,21 @@ If you are a package developer releasing software, I suggest starting with at le
 and put them in a file named
 TODO: ??? WHAT IS A SUGGESTED FILENAME?
 
-## SPDX expressions in a source code file
+## SPDX license expressions in asource code files
 
-TODO: Note a variant of ESR's convention.
+You can also refer to SPDX license expressions from source code, instead of trying to
+embed large quantities of legalese in your source code headers.
+The SPDX group have not endorsed a particular way to do this, however.
+I recommend doing this in a comment near the top of the file:
+
+    SPDX-License-Expression: *Actual SPDX license expression*
+
+Note that this says license expression, not license identifier; this makes it clear that you can
+use the full power of SPDX license expressions if you need to.
+
+## More information
+
+For more information, visit the [SPDX website](http://spdx.org/).
 
 ## About this tutorial
 
