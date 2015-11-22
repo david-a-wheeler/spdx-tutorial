@@ -177,13 +177,16 @@ since they are all very common and can be combined into larger works:
 
 The list above is extremely similar to the recommendations in GitHub's [ChooseALicense.com](http://choosealicense.com/).
 
-Most of the BSD licenses are perfectly reasonable as permissive licenses.  A historical problem with them is that there
+Most of the BSD licenses are perfectly reasonable as permissive licenses.
+In particular, the [BSD-2-Clause (BSD 2-clause "Simplified" License)](https://spdx.org/licenses/BSD-2-Clause.html) and
+[BSD-3-Clause (BSD 3-clause "New" or "Revised" License)](https://spdx.org/licenses/BSD-3-Clause.html)
+are perfectly good and widely-used permissive licenses.
+A historical problem with them is that there
 are many different licenses all called the "BSD license", and at least one of them
 (with SPDX license identifier "BSD-4-Clause") is obsolete, incompatible with many other licenses, and
 in my opinion often impractical to use at today's Internet scale due to its "obnoxious advertizing clause".
 SPDX solves this problem of ambiguity; instead of saying "BSD license" (which is dangerously vague), you can use
-precise SPDX license expressions.  For example, perfectly good BSD-style licenses include the
-"BSD-3-Clause" and "BSD-2-Clause".  SPDX can make BSD-style licenses much easier for everyone to use and understand.
+precise SPDX license expressions.  SPDX can make licenses in this family much easier for everyone to use and understand.
 
 Of course, different people have different opinions about what license to use, and licenses
 are often difficult to change later.
