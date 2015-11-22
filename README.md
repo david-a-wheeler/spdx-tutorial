@@ -164,7 +164,8 @@ since they are all very common and can be combined into larger works:
 
 * MIT.  This is a simple permissive license, useful if you want people to do whatever they want with the software;
   it provides some simple legal protections for developers.
-* Apache-2.0.  This is a permissive license with some patent protections, useful if you have concerns about patents.
+* Apache-2.0.  This is a permissive license but includes an express grant of patent rights from contributors to users;
+  this may be useful if you have concerns about patents in the project.
 * LGPL-2.0+.  This is a common weakly protective license, which ensures that those who get the executable of the
   software can also get the source code, but allows the software to be used in larger proprietary works.
 * GPL-2.0+.  This is a common strongly protective license, which ensures that those who get the executable of the
