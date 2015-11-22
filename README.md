@@ -184,7 +184,7 @@ In particular, the licenses identified in SPDX as
 [BSD-2-Clause (BSD 2-clause "Simplified" License)](https://spdx.org/licenses/BSD-2-Clause.html),
 [BSD-3-Clause (BSD 3-clause "New" or "Revised" License)](https://spdx.org/licenses/BSD-3-Clause.html), and
 [0BSD (BSD Zero Clause License)](https://spdx.org/licenses/0BSD.html)
-are perfectly good widely-used permissive licenses.
+are perfectly good permissive licenses (and the first two are widely used).
 A historical problem with them is that there
 are many different licenses all called the "BSD license", and at least one of them
 (with SPDX license identifier "BSD-4-Clause") is obsolete, incompatible with many other licenses, and
