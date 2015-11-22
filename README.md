@@ -181,8 +181,10 @@ SPDX solves this problem of ambiguity; instead of saying "BSD license" (which is
 precise SPDX license expressions.  For example, perfectly good BSD-style licenses include the
 "BSD-3-Clause" and "BSD-2-Clause".  SPDX can make BSD-style licenses much easier for everyone to use and understand.
 
-Of course, different people have different opinions about what license to use, and are difficult to change later.
-Picking a license depends on your beliefs and goals for a particular project; the same person is likely to
+Of course, different people have different opinions about what license to use, and licenses
+are often difficult to change later.
+Picking a license depends on your beliefs and goals for a particular project.
+Indeed, the same person is likely to
 chose different licenses for different projects, depending on the goals of the project.
 SPDX makes it possible to capture this licensing information in a precise and automated way.
 
