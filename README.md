@@ -8,7 +8,11 @@ To use SPDX you need to understand three basic constructs: SPDX license identifi
 
 ## SPDX license identifiers
 
-SPDX license identifiers are the heart of SPDX.  A license identifier is a human readable short text string that uniquely identifies a license.  Here are some SPDX license identifiers (in alphabetical order) for some widely-used free/libre/open source software licenses, and what they mean:
+SPDX license identifiers are the heart of SPDX.
+A license identifier is a human readable short text string that uniquely identifies a license.
+Here are some SPDX license identifiers (in alphabetical order) for some widely-used
+[free](http://www.gnu.org/philosophy/free-sw.en.html)/libre/[open source software](https://opensource.org/osd-annotated)
+licenses and [free cultural works](http://creativecommons.org/freeworks) licenses, followed by what the identfiers mean:
 
 * Apache-2.0 : [Apache License 2.0](https://spdx.org/licenses/Apache-2.0.html)
 * BSD-2-Clause : [BSD 2-clause "Simplified" License](https://spdx.org/licenses/BSD-2-Clause.html)
