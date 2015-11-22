@@ -137,9 +137,10 @@ Personally, I think having a file named
 To my knowledge SPDX (in either format) has not yet been formally registered as a MIME type.
 
 If you're developing software or other copyrightable content, you still need to select a license and express
-it in a way others can understand.  For software, create a file named LICENSE or COPYING (possibly with a .md or
+it in a way humans can understand.  For software, create a file named LICENSE or COPYING (possibly with a .md or
 .txt extension) to provide human-readable text of the license.  Also create a SPDX file, as described above,
-so programs can automatically process exactly what the license is.
+so programs can automatically process exactly what the license is, and humans can have a short and precise way
+of representing the license of the software.
 
 ## SPDX license expressions in source code files
 
