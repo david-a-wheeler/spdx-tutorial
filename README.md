@@ -31,6 +31,7 @@ Similarly, here are some [free cultural works](http://creativecommons.org/freewo
 (typically used for works other than software):
 
 * CC-BY-3.0 : [Creative Commons Attribution 3.0](https://spdx.org/licenses/CC-BY-3.0.html)
+* CC-BY-4.0 : [Creative Commons Attribution 4.0](https://spdx.org/licenses/CC-BY-4.0.html)
 * CC-BY-SA-4.0 : [Creative Commons Attribution Share Alike 4.0](https://spdx.org/licenses/CC-BY-SA-4.0.html)
 * CC0-1.0 : [Creative Commons Zero v1.0 Universal](https://spdx.org/licenses/CC0-1.0.html)
 
