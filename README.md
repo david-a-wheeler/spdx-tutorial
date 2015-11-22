@@ -139,8 +139,8 @@ and it'd be better if the name made it clear that full license expressions are a
 
 If you're developing software or other copyrightable content, you need to select a license and express
 it in a way others can know.  For software, create a file named LICENSE or COPYING (possibly with a .md or
-.txt extension) which provides human-readable text of the license.  Also create the SPDX file described above,
-so tools can automatically process it.
+.txt extension) to provide human-readable text of the license.  Also create a SPDX file described above,
+so programs can automatically process exactly what the license is.
 
 I (David A. Wheeler) recommend that you primarily pick from one of the following SPDX license expressions,
 since they are all very common and can be combined into larger works:
@@ -149,6 +149,21 @@ since they are all very common and can be combined into larger works:
 * Apache-2.0 (permissive license with some patent protections)
 * LGPL-2.0+ (weakly protective license)
 * GPL-2.0+ (strongly protective license)
+
+The list above is extremely similar to the recommendations in GitHub's [ChooseALicense.com](http://choosealicense.com/).
+
+Most of the BSD licenses are perfectly reasonable as permissive licenses.  A historical problem with them is that there
+are many different licenses all called the "BSD license", and one of them
+(which has the SPDX identifier "BSD-4-Clause") is obsolete, incompatible with many other licenses, and
+in my opinion often impractical to use at today's Internet scale due to its "obnoxious advertizing clause".
+SPDX solves this problem; instead of saying "BSD license" (which is dangerously vague), you can use
+precise SPDX license expressions.  For example, perfectly good BSD-style licenses include the
+"BSD-3-Clause" and "BSD-2-Clause".  SPDX can make BSD-style licenses much easier for everyone to use.
+
+Of course, different people have different opinions about what license to use.
+Picking a license depends on your beliefs and goals for a particular project; the same person is likely to
+chose different licenses for different projects, depending on the goals of the project.
+SPDX makes it possible to capture this licensing information in a precise and automated way.
 
 ## More information
 
