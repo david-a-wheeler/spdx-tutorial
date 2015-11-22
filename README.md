@@ -84,7 +84,7 @@ A few especially important tags are:
 * SPDXVersion: The version of the spec used, normally "SPDX-2.0".
 * DataLicense: The license for the license data itself (!); normally this is "CC0-1.0".
   Note that this is *not* the license for the software or data being packaged.
-* Creator: Who or what created this SPDX file.  This is in one of 3 formats:
+* Creator: Who or what created this SPDX file (not the package creator).  This is in one of 3 formats:
     - For a person: person name, optionally followed by email in parentheses.
     - For an organization: organization name, optionally followed by email in parentheses.
     - For a tool: toolidentifier-version
