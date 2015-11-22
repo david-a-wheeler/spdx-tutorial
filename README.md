@@ -75,9 +75,13 @@ Many of the tags and features are useful only when exchanging SPDX files that ar
 and describe large collections of packages.
 In particular, the specification officially considers many tags mandatory, but I personally would interpret them only as
 "mandatory" if you are trying to exchange SPDX files that are isolated from their packages.
-
 If you are a package developer releasing software, I suggest starting with at least these two lines.
-Conventionally these are in a file named for the project with the extension ".spdx".
+
+Conventionally a SPDX filename has the extension ".spdx" (in either XML or tag-value format).
+When combining SDPX files together they often use the project name, though I think
+"LICENSE.spdx" at the top level would be perfectly reasonable when including a SPDX file in a project.
+To my knowledge SPDX has not been registered as a MIME type, so currently it would probably
+have a MIME type mapping of ".spdx" to MIME type "application/x-spdx".
 
 ## SPDX license expressions in asource code files
 
