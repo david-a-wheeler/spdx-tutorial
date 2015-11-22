@@ -97,7 +97,7 @@ the package maintainers declare that all the software in this package is release
     PackageName: Foo
     PackageLicenseDeclared: MIT
 
-There are a lot more details and options explained in the
+There are many more tags you can use.  They are explained in the full
 [SPDX specification](https://spdx.org/SPDX-specifications/spdx-version-2.0).
 
 Now, a personal note.
