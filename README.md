@@ -71,7 +71,7 @@ SPDX expressions are case-insensitive, but by convention the operation names sho
 SPDX files are a way to capture and exchange license information.
 The SPDX specification actually supports two formats: tag/value and RDF/XML.
 They can do the same thing, but tag/value is easier to write, so that's what we'll use here.
-A tag/value file is simply a sequence of lines, where each line is a tag name, a colon, a space, and its value.
+A tag/value file is normally a sequence of lines, where each line is a tag name, a colon, a space, and its value.
 
 There are many tags defined in the SPDX specification, but many of them may not apply to your specific situation.
 Note that unlike license expressions, tag names are case-sensitive.
