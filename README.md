@@ -96,13 +96,14 @@ A few especially important tags are:
    
 For example, a SPDX file with the following lines states that this uses the SPDX 2.0 format (the current one),
 the license information can be shared with everyone, this SPDX file was created by David A. Wheeler,
-it describes the Foo package, and
+it describes the Foo package, it has the given project home page, and
 the package maintainers declare that all the software in this package is released using the MIT license:
 
     SPDXVersion: SPDX-2.0
     DataLicense: CC0-1.0
     Creator: David A. Wheeler
     PackageName: Foo
+    PackageHomePage: https://github.com/david-a-wheeler/spdx-tutorial/
     PackageLicenseDeclared: MIT
 
 There are many more tags you can use.  They are explained in the full
