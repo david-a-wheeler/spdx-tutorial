@@ -126,7 +126,7 @@ You can also refer to SPDX license expressions from source code, instead of tryi
 embed large quantities of legalese in your source code headers.
 The SPDX group have not endorsed a particular way to do this, however.
 I recommend using a case-sensitive tag "SPDX-License-Expression" in a comment near the top of the file,
-followed by the SPDX license expression.  For example, in a language that uses "#" as the
+followed by the SPDX license expression.  For example, in a programming language that uses "#" as the
 rest-of-line comment character, use this to express "this software is under GPL version 3.0 or later":
 
     # SPDX-License-Expression: GPL-3.0+
