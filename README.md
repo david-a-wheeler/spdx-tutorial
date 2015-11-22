@@ -15,6 +15,7 @@ Here are some SPDX license identifiers (in alphabetical order) for some widely-u
 [free](http://www.gnu.org/philosophy/free-sw.en.html)/libre/[open source software](https://opensource.org/osd-annotated)
 licenses, followed by what the identifiers mean:
 
+* AGPL-3.0 : [GNU Affero General Public License v3.0](https://spdx.org/licenses/AGPL-3.0.html)
 * Apache-2.0 : [Apache License 2.0](https://spdx.org/licenses/Apache-2.0.html)
 * BSD-2-Clause : [BSD 2-clause "Simplified" License](https://spdx.org/licenses/BSD-2-Clause.html)
 * BSD-3-Clause :  [BSD 3-clause "New" or "Revised" License](https://spdx.org/licenses/BSD-3-Clause.html)
