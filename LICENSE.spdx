@@ -1,4 +1,5 @@
 SPDXVersion: SPDX-2.0
 DataLicense: CC0-1.0
+Creator: David A. Wheeler
 PackageName: spdx-tutorial
 PackageLicenseDeclared: CC-BY-3.0+
