@@ -116,8 +116,8 @@ so that you can describe large collections of packages.
 In particular, the specification officially considers many tags mandatory, but I personally would interpret them only as
 "mandatory" if you are trying to exchange SPDX files that are isolated from their packages.
 If you are a package developer releasing software, and just want to include a short file that
-describes the license you're using for just the software you're releasing, I suggest starting with the five lines listed
-in the example above.
+describes the license you're using for just the software you're releasing, I suggest starting with the lines listed
+in the example above (emphasizing PackageLicenseDeclared).
 In those cases you don't really need tags like the "Created" datetime stamp (your version control system does that),
 "DocumentName" (you can see what it is), "PackageDownloadLocation" (that changes all the time), and so on.
 
