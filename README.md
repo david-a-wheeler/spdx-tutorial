@@ -47,9 +47,12 @@ using the SPDX license expression "GPL-2.0+".
 
 You can also use three different operators to combine license expressions to create other license expressions:
 
-* "OR": Recipients can choose between two or more licenses.  For example, "(LGPL-2.1 OR MIT OR BSD-3-Clause)" means recipients can choose between any of those three licenses.
-* "AND": Recipients are required to simultaneously comply with two or more licenses.  For example, "(LGPL-2.1 AND MIT AND BSD-2-Clause)" means recipients must comply with all three licenses.
-* "WITH": Add the collowing exception(s).  For example, "(GPL-2.0+ WITH Bison-exception-2.2)" means recipients must comply with the GPL version 2.0 or later with Bison exception is to be applied to the GPL.
+* "OR": Recipients can choose between two or more licenses.
+  For example, "(LGPL-2.1 OR MIT OR BSD-3-Clause)" means recipients can choose between any of those three licenses.
+* "AND": Recipients are required to simultaneously comply with two or more licenses.
+  For example, "(LGPL-2.1 AND MIT AND BSD-2-Clause)" means recipients must comply with all three licenses.
+* "WITH": Add the collowing exception(s).  For example, "(GPL-2.0+ WITH Bison-exception-2.2)"
+  means recipients must comply with the GPL version 2.0 or later with the Bison exception.
 
 There is an order of operations: "+", then "WITH", then "AND", then "OR".
 This order can be overridden by parentheses, and if it's complex parentheses are good for clarity.
