@@ -135,6 +135,21 @@ Some developers use "SPDX-License-Identifier" instead of "SPDX-License-Expressio
 I think that's a mistake, because sometimes you want the full power of SPDX license expressions,
 and it'd be better if the name made it clear that full license expressions are allowed.
 
+## License recommendations
+
+If you're developing software or other copyrightable content, you need to select a license and express
+it in a way others can know.  For software, create a file named LICENSE or COPYING (possibly with a .md or
+.txt extension) which provides human-readable text of the license.  Also create the SPDX file described above,
+so tools can automatically process it.
+
+I (David A. Wheeler) recommend that you primarily pick from one of the following SPDX license expressions,
+since they are all very common and can be combined into larger works:
+
+* MIT (simple permissive license)
+* Apache-2.0 (permissive license with some patent protections)
+* LGPL-2.0+ (weakly protective license)
+* GPL-2.0+ (strongly protective license)
+
 ## More information
 
 For more information, visit the [SPDX website](http://spdx.org/).
