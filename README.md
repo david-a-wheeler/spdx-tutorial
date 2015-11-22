@@ -120,6 +120,11 @@ When combining SDPX files together they often use the project name, though I thi
 To my knowledge SPDX has not been registered as a MIME type, so currently it would probably
 have a MIME type mapping of ".spdx" to MIME type "application/x-spdx".
 
+If you're developing software or other copyrightable content, you still need to select a license and express
+it in a way others can understand.  For software, create a file named LICENSE or COPYING (possibly with a .md or
+.txt extension) to provide human-readable text of the license.  Also create a SPDX file, as described above,
+so programs can automatically process exactly what the license is.
+
 ## SPDX license expressions in source code files
 
 You can also refer to SPDX license expressions from source code, instead of trying to
@@ -137,30 +142,29 @@ and it'd be better if the name made it clear that full license expressions are a
 
 ## License recommendations
 
-If you're developing software or other copyrightable content, you need to select a license and express
-it in a way others can know.  For software, create a file named LICENSE or COPYING (possibly with a .md or
-.txt extension) to provide human-readable text of the license.  Also create a SPDX file described above,
-so programs can automatically process exactly what the license is.
-
 I (David A. Wheeler) recommend that you primarily pick from one of the following SPDX license expressions,
 since they are all very common and can be combined into larger works:
 
-* MIT (simple permissive license)
-* Apache-2.0 (permissive license with some patent protections)
-* LGPL-2.0+ (weakly protective license)
-* GPL-2.0+ (strongly protective license)
+* MIT.  This is a simple permissive license, useful if you want people to do whatever they want with the software;
+  it provides some simple legal protections for developers.
+* Apache-2.0.  This is a permissive license with some patent protections, useful if you have concerns about patents.
+* LGPL-2.0+.  This is a common weakly protective license, which ensures that those who get the executable of the
+  software can also get the source code, but allows the software to be used in larger proprietary works.
+* GPL-2.0+.  This is a common strongly protective license, which ensures that those who get the executable of the
+  software can also get the source code.  Selecting "GPL-3.0+" is also a reasonable choice, but is incompatible
+  with programs that are GPL-2.0 only.
 
 The list above is extremely similar to the recommendations in GitHub's [ChooseALicense.com](http://choosealicense.com/).
 
 Most of the BSD licenses are perfectly reasonable as permissive licenses.  A historical problem with them is that there
-are many different licenses all called the "BSD license", and one of them
-(which has the SPDX identifier "BSD-4-Clause") is obsolete, incompatible with many other licenses, and
+are many different licenses all called the "BSD license", and at least one of them
+(with SPDX license identifier "BSD-4-Clause") is obsolete, incompatible with many other licenses, and
 in my opinion often impractical to use at today's Internet scale due to its "obnoxious advertizing clause".
-SPDX solves this problem; instead of saying "BSD license" (which is dangerously vague), you can use
+SPDX solves this problem of ambiguity; instead of saying "BSD license" (which is dangerously vague), you can use
 precise SPDX license expressions.  For example, perfectly good BSD-style licenses include the
-"BSD-3-Clause" and "BSD-2-Clause".  SPDX can make BSD-style licenses much easier for everyone to use.
+"BSD-3-Clause" and "BSD-2-Clause".  SPDX can make BSD-style licenses much easier for everyone to use and understand.
 
-Of course, different people have different opinions about what license to use.
+Of course, different people have different opinions about what license to use, and are difficult to change later.
 Picking a license depends on your beliefs and goals for a particular project; the same person is likely to
 chose different licenses for different projects, depending on the goals of the project.
 SPDX makes it possible to capture this licensing information in a precise and automated way.
