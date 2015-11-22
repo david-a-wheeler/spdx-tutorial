@@ -55,8 +55,8 @@ You can also use three different operators to combine license expressions to cre
   For example, "(LGPL-2.1 OR MIT OR BSD-3-Clause)" means recipients can choose between any of those three licenses.
 * "AND": Recipients are required to simultaneously comply with two or more licenses.
   For example, "(LGPL-2.1 AND MIT AND BSD-2-Clause)" means recipients must comply with all three licenses.
-* "WITH": Add the collowing exception(s).  For example, "(GPL-2.0+ WITH Classpath-exception-2.0)"
-  means recipients must comply with the GPL version 2.0 or later with the Classpath 2.0 license exception.
+* "WITH": Add the collowing exception(s).  For example, "(GPL-3.0+ WITH Classpath-exception-2.0)"
+  means recipients must comply with the GPL version 3.0 or later with the Classpath 2.0 license exception.
   See the [SPDX license exceptions list](https://spdx.org/licenses/exceptions-index.html) for the list of
   standard names for license exceptions.
 
