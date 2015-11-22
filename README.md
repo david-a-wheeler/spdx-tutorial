@@ -101,11 +101,13 @@ There are a lot more details and options explained in the
 [SPDX specification](https://spdx.org/SPDX-specifications/spdx-version-2.0).
 
 Now, a personal note.
-Many of the tags and features are useful only when exchanging SPDX files that are isolated from their packages
+Many of the tags and features in the SPDX file specification
+are useful only when exchanging SPDX files that are isolated from their packages
 and describe large collections of packages.
 In particular, the specification officially considers many tags mandatory, but I personally would interpret them only as
 "mandatory" if you are trying to exchange SPDX files that are isolated from their packages.
-If you are a package developer releasing software, I suggest starting with at least the four lines listed
+If you are a package developer releasing software, and just want to include a short file that
+describes the license you're using for releasing the software, I suggest starting with the five lines listed
 in the example above.
 
 Conventionally a SPDX filename has the extension ".spdx" (in either XML or tag-value format).
