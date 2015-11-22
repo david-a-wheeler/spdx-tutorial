@@ -87,21 +87,26 @@ A few especially important tags are:
 * PackageHomePage: The package's home page URL.
    
 For example, a SPDX file with these lines states that this uses the SPDX 2.0 format (the current one),
-the license information can be shared with everyone, it describes the Foo package, and
+the license information can be shared with everyone, this SPDX file was created by David A. Wheeler,
+it describes the Foo package, and
 the package maintainers declare that all the software in this package is released using the MIT license:
 
     SPDXVersion: SPDX-2.0
     DataLicense: CC0-1.0
+    Creator: David A. Wheeler
     PackageName: Foo
     PackageLicenseDeclared: MIT
 
-There are a lot more details and options in the
+There are a lot more details and options explained in the
 [SPDX specification](https://spdx.org/SPDX-specifications/spdx-version-2.0).
+
+Now, a personal note.
 Many of the tags and features are useful only when exchanging SPDX files that are isolated from their packages
 and describe large collections of packages.
 In particular, the specification officially considers many tags mandatory, but I personally would interpret them only as
 "mandatory" if you are trying to exchange SPDX files that are isolated from their packages.
-If you are a package developer releasing software, I suggest starting with at least these two lines.
+If you are a package developer releasing software, I suggest starting with at least the four lines listed
+in the example above.
 
 Conventionally a SPDX filename has the extension ".spdx" (in either XML or tag-value format).
 When combining SDPX files together they often use the project name, though I think
