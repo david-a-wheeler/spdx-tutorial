@@ -115,11 +115,13 @@ If you are a package developer releasing software, and just want to include a sh
 describes the license you're using for releasing the software, I suggest starting with the five lines listed
 in the example above.
 
-Conventionally a SPDX filename has the extension ".spdx" (in either XML or tag-value format).
-When combining SDPX files together they often use the project name, though I think
-"LICENSE.spdx" at the top level would be perfectly reasonable when including a SPDX file in a project.
-To my knowledge SPDX has not been registered as a MIME type, so currently it would probably
-have a MIME type mapping of ".spdx" to MIME type "application/x-spdx".
+The SPDX specification doesn't specify a file extension or file naming convention.
+I personally recommend using ".spdx" for a SDPX file in tag-value format (as described here),
+and using ".rdf" for a SDPX file in RDF+XML format.
+When combining SDPX files together people often use the project name as the filename.
+Personally, I think having a file named
+"LICENSE.spdx" at the top level would be perfectly reasonable when including a SPDX file inside a single project.
+To my knowledge SPDX (in either format) has not yet been formally registered as a MIME type.
 
 If you're developing software or other copyrightable content, you still need to select a license and express
 it in a way others can understand.  For software, create a file named LICENSE or COPYING (possibly with a .md or
