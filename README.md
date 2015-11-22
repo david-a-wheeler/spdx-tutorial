@@ -178,9 +178,10 @@ since they are all very common and can be combined into larger works:
 The list above is extremely similar to the recommendations in GitHub's [ChooseALicense.com](http://choosealicense.com/).
 
 Most of the BSD licenses are perfectly reasonable as permissive licenses.
-In particular, the licensed identified in SPDX as
-[BSD-2-Clause (BSD 2-clause "Simplified" License)](https://spdx.org/licenses/BSD-2-Clause.html) and
-[BSD-3-Clause (BSD 3-clause "New" or "Revised" License)](https://spdx.org/licenses/BSD-3-Clause.html)
+In particular, the licenses identified in SPDX as
+[BSD-2-Clause (BSD 2-clause "Simplified" License)](https://spdx.org/licenses/BSD-2-Clause.html),
+[BSD-3-Clause (BSD 3-clause "New" or "Revised" License)](https://spdx.org/licenses/BSD-3-Clause.html), and
+[0BSD (BSD Zero Clause License)](https://spdx.org/licenses/0BSD.html)
 are perfectly good widely-used permissive licenses.
 A historical problem with them is that there
 are many different licenses all called the "BSD license", and at least one of them
