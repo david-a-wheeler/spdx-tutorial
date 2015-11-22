@@ -148,3 +148,5 @@ It is released under the Creative Commons Attribution License 3.0 Unported (CC-B
 the 3.0 license is used for the SPDX specification.
 In SPDX notation, this tutorial is released under "CC-BY-3.0+"; see the
 [LICENSE.spdx](./LICENSE.spdx) file to see how we've expressed this.
+
+[CLICK HERE to suggest an edit to this page!](https://github.com/david-a-wheeler/spdx-tutorial.github.io/edit/master/README.md)
