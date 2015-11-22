@@ -152,6 +152,9 @@ rest-of-line comment character, use this to express "this software is under GPL 
 
     # SPDX-License-Expression: GPL-3.0+
 
+This should be interpreted using the version of SPDX published when this line was
+added or modified.  Modern version control software, like git, can easily provide this information.
+
 [Some](http://esr.ibiblio.org/?p=6867)
 developers use "SPDX-License-Identifier" instead of "SPDX-License-Expression".
 I'm glad they're using SPDX, but I think that particular tag name is a mistake,
