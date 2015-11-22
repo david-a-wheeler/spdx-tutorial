@@ -12,16 +12,23 @@ SPDX license identifiers are the heart of SPDX.
 A license identifier is a human readable short text string that uniquely identifies a license.
 Here are some SPDX license identifiers (in alphabetical order) for some widely-used
 [free](http://www.gnu.org/philosophy/free-sw.en.html)/libre/[open source software](https://opensource.org/osd-annotated)
-licenses and [free cultural works](http://creativecommons.org/freeworks) licenses, followed by what the identfiers mean:
+licenses, followed by what the identifiers mean:
 
 * Apache-2.0 : [Apache License 2.0](https://spdx.org/licenses/Apache-2.0.html)
 * BSD-2-Clause : [BSD 2-clause "Simplified" License](https://spdx.org/licenses/BSD-2-Clause.html)
 * BSD-3-Clause :  [BSD 3-clause "New" or "Revised" License](https://spdx.org/licenses/BSD-3-Clause.html)
-* CC-BY-3.0 : [Creative Commons Attribution 3.0]()
+
 * GPL-2.0 : [GNU General Public License version 2.0 only](https://spdx.org/licenses/GPL-2.0.html)
 * GPL-3.0 : [GNU General Public License version 3.0 only](https://spdx.org/licenses/GPL-3.0.html)
 * LGPL-3.0 : [GNU Lesser General Public License v3.0 only](https://spdx.org/licenses/LGPL-3.0.html)
 * MIT : [The MIT license](https://spdx.org/licenses/MIT.html), aka the expat license.
+
+Similarly, here are some [free cultural works](http://creativecommons.org/freeworks) licenses
+(typically used for works other than software):
+
+* CC-BY-3.0 : [Creative Commons Attribution 3.0](https://spdx.org/licenses/CC-BY-3.0.html)
+* CC-BY-SA-4.0 : [Creative Commons Attribution Share Alike 4.0](https://spdx.org/licenses/CC-BY-SA-4.0.html)
+* CC0-1.0 : [Creative Commons Zero v1.0 Universal](https://spdx.org/licenses/CC0-1.0.html)
 
 SPDX license identifiers never contain a space.  SPDX licenses use case-insensitive matching, however, people are encouraged to provide and display the mixed-case forms where reasonable.  In URLs people are encouraged to support both mixed-case and lower-case forms; if that's impractical, convert to lower case (to support case-insensitive matching).
 
