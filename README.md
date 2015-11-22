@@ -90,7 +90,7 @@ A few especially important tags are:
   in the source code package.  This field is not intended to capture license information
   obtained from an external source, such as the package website.
    
-For example, a SPDX file with these lines states that this uses the SPDX 2.0 format (the current one),
+For example, a SPDX file with the following lines states that this uses the SPDX 2.0 format (the current one),
 the license information can be shared with everyone, this SPDX file was created by David A. Wheeler,
 it describes the Foo package, and
 the package maintainers declare that all the software in this package is released using the MIT license:
