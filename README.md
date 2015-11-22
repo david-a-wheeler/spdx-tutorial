@@ -131,8 +131,9 @@ rest-of-line comment character, use this to express "this software is under GPL 
 
     # SPDX-License-Expression: GPL-3.0+
 
-Note that this says license expression, not license identifier; this name makes it clear that you can
-use the full power of SPDX license expressions if you need to.
+Some developers use "SPDX-License-Identifier" instead of "SPDX-License-Expression".
+I think that's a mistake, because sometimes you want the full power of SPDX license expressions,
+and it'd be better if the name made it clear that full license expressions are allowed.
 
 ## More information
 
