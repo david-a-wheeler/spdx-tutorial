@@ -126,10 +126,6 @@ include all the mandatory tags.
 Organizations that have to deal with many components and licenses
 need that additional information when they do legal review, and that's what those tags are for.
 If you are in that more complicated circumstance, see the SPDX site for information about tools that can help you.
-(If you care, the mandatory tags we have not yet defined are:
-SPDXID, DocumentName, DocumentNamespace, Created, PackageDownloadLocation,
-PackageVerificationCode, PackageLicenseConcluded, PackageLicenseInfoFromFiles, PackageCopyrightText,
-FileName, FileChecksum, LicenseConcluded, LicenseInfoInFile, and FileCopyrightText.)
 
 The SPDX specification doesn't specify a file extension or file naming convention.
 I personally recommend using ".spdx" for a SDPX file in tag-value format (as described here),
