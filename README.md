@@ -117,7 +117,7 @@ When combining SDPX files together they often use the project name, though I thi
 To my knowledge SPDX has not been registered as a MIME type, so currently it would probably
 have a MIME type mapping of ".spdx" to MIME type "application/x-spdx".
 
-## SPDX license expressions in asource code files
+## SPDX license expressions in source code files
 
 You can also refer to SPDX license expressions from source code, instead of trying to
 embed large quantities of legalese in your source code headers.
