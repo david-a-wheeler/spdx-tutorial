@@ -76,9 +76,8 @@ and describe large collections of packages.
 In particular, the specification officially considers many tags mandatory, but I personally would interpret them only as
 "mandatory" if you are trying to exchange SPDX files that are isolated from their packages.
 
-If you are a package developer releasing software, I suggest starting with at least these two lines,
-and put them in a file named
-TODO: ??? WHAT IS A SUGGESTED FILENAME?
+If you are a package developer releasing software, I suggest starting with at least these two lines.
+Conventionally these are in a file named for the project with the extension ".spdx".
 
 ## SPDX license expressions in asource code files
 
