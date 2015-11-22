@@ -117,11 +117,15 @@ describes the license you're using for just the software you're releasing, I sug
 in the example above.
 In those cases you don't really need tags like the "Created" datetime stamp (your version control system does that),
 "DocumentName" (you can see what it is), "PackageDownloadLocation" (that changes all the time), and so on.
-However, if you're exchanging larger files about many software components without the software itself, then absolutely *do*
-include all the other mandatory tags (these are SPDXID, DocumentName, DocumentNamespace, Created, PackageDownloadLocation,
+
+However, if you're exchanging larger files about many software components,
+particularly if you're exchanging them without the software itself, then absolutely *do*
+include all the mandatory tags. The mandatory tags we have not yet defined are
+SPDXID, DocumentName, DocumentNamespace, Created, PackageDownloadLocation,
 PackageVerificationCode, PackageLicenseConcluded, PackageLicenseInfoFromFiles, PackageCopyrightText,
-FileName, FileChecksum, LicenseConcluded, LicenseInfoInFile, and FileCopyrightText).
-That's what all those other tags are for!
+FileName, FileChecksum, LicenseConcluded, LicenseInfoInFile, and FileCopyrightText.
+Organizations that have to deal with many components and licenses
+need that additional information when they do legal review, and that's what those tags are for.
 If you are in that more complicated circumstance, see the SPDX site for information about tools that can help you.
 
 The SPDX specification doesn't specify a file extension or file naming convention.
