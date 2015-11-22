@@ -108,12 +108,20 @@ There are many more tags you can use.  They are explained in the full
 Now, a personal note.
 Many of the tags and features in the SPDX file specification
 are useful only when exchanging SPDX files that are isolated from their packages
-and describe large collections of packages.
+so that you can describe large collections of packages.
 In particular, the specification officially considers many tags mandatory, but I personally would interpret them only as
 "mandatory" if you are trying to exchange SPDX files that are isolated from their packages.
 If you are a package developer releasing software, and just want to include a short file that
-describes the license you're using for releasing the software, I suggest starting with the five lines listed
+describes the license you're using for just the software you're releasing, I suggest starting with the five lines listed
 in the example above.
+In those cases you don't really need tags like the "Created" datetime stamp (your version control system does that),
+"DocumentName" (you can see what it is), "PackageDownloadLocation" (that changes all the time), and so on.
+However, if you're exchanging larger files about many software components without the software itself, then absolutely *do*
+include all the other mandatory tags (these are SPDXID, DocumentName, DocumentNamespace, Created, PackageDownloadLocation,
+PackageVerificationCode, PackageLicenseConcluded, PackageLicenseInfoFromFiles, PackageCopyrightText,
+FileName, FileChecksum, LicenseConcluded, LicenseInfoInFile, and FileCopyrightText).
+That's what all those other tags are for!
+If you are in that more complicated circumstance, see the SPDX site for information about tools that can help you.
 
 The SPDX specification doesn't specify a file extension or file naming convention.
 I personally recommend using ".spdx" for a SDPX file in tag-value format (as described here),
