@@ -117,4 +117,6 @@ Common destinations include the
 ## About this tutorial
 
 This tutorial was originally developed by [David A. Wheeler](http://www.dwheeler.com).
-It is released under the Creative Commons Attribution License 3.0 Unported (CC-BY-3.0) license, the same license used for the SPDX specification.  In SPDX notation, this is released under CC-BY-3.0.
+It is released under the Creative Commons Attribution License 3.0 Unported (CC-BY-3.0) license or later;
+the 3.0 license is used for the SPDX specification.
+In SPDX notation, this tutorial is released under "CC-BY-3.0+".
