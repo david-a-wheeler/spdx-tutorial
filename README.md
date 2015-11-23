@@ -226,16 +226,22 @@ it is often impractical to use at today's Internet scale due to its "obnoxious a
 SPDX solves this problem of ambiguity; instead of saying "BSD license" (which is dangerously vague), you can use
 a precise SPDX license expression.  SPDX can make licenses in this family much easier for everyone to use and understand.
 
-I recommend that people not use [CC0-1.0](https://spdx.org/licenses/CC0-1.0.html) for software, especially
-if you're not a government.  [CC0-1.0](https://spdx.org/licenses/CC0-1.0.html) releases material to the public domain
+I recommend that people *not* use [CC0-1.0 (public domain)](https://spdx.org/licenses/CC0-1.0.html) for software,
+especially if you're not a government employee.
+[CC0-1.0](https://spdx.org/licenses/CC0-1.0.html) releases material to the public domain
 and fails to include disclaimers of warranty and merchantability.
-These diclaimers provide a small amount of legal protection at no cost; you should use them.
-I recommend using the [MIT](https://spdx.org/licenses/MIT.html) license instead.
-Reasonable alternatives if you want *short* permissive licenses include
+These disclaimers provide a small amount of legal protection at no cost; you should use them.
+Governments sometimes use CC0, but for them the legal protections are less important
+(it's harder to sue governments).
+I recommend using the [MIT](https://spdx.org/licenses/MIT.html) license instead for software.
+Reasonable alternatives if you want *short* permissive software licenses include
 [BSD-2-Clause (the BSD 2-clause "Simplified" License)](https://spdx.org/licenses/BSD-2-Clause.html),
 [BSD-3-Clause (BSD 3-clause "New" or "Revised" License)](https://spdx.org/licenses/BSD-3-Clause.html),
 [0BSD (BSD Zero Clause License)](https://spdx.org/licenses/0BSD.html), and
 the [Unlicense](https://spdx.org/licenses/Unlicense.html).
+The [CC0-1.0](https://spdx.org/licenses/CC0-1.0.html), [CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html),
+and [CC-BY-SA-4.0](https://spdx.org/licenses/CC-BY-SA-4.0.html) licenses are just
+fine for ordinary textual and artistic works.
 
 Of course, different people have different opinions about what license to use, and licenses
 are often difficult to change later.
