@@ -285,4 +285,4 @@ In SPDX notation, this tutorial is released under "CC-BY-3.0+"; see the
 [LICENSE.spdx](./LICENSE.spdx) file to see how we've expressed this.
 
 Please propose changes (preferably as pull requests) at
-<https://github.com/david-a-wheeler/spdx-tutorial#spdx-tutorial>.
+<https://github.com/david-a-wheeler/spdx-tutorial/#spdx-tutorial>.
