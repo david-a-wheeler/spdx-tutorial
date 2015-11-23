@@ -26,7 +26,7 @@ licenses, followed by what the identifiers mean:
 * GPL-2.0 : [GNU General Public License version 2.0 only](https://spdx.org/licenses/GPL-2.0.html)
 * GPL-3.0 : [GNU General Public License version 3.0 only](https://spdx.org/licenses/GPL-3.0.html)
 * LGPL-3.0 : [GNU Lesser General Public License v3.0 only](https://spdx.org/licenses/LGPL-3.0.html)
-* MIT : [The MIT license](https://spdx.org/licenses/MIT.html), aka the expat license.
+* MIT : [The MIT license](https://spdx.org/licenses/MIT.html), aka the expat license; note that this is different from the [X11](https://spdx.org/licenses/X11.html] license.
 
 Similarly, here are some [free cultural works](http://creativecommons.org/freeworks) licenses
 (typically used for works other than software):
