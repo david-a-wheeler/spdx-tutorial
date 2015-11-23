@@ -187,7 +187,9 @@ I've contacted the SPDX maintainers to see if they really mean to use "SPDX-Lice
 ## License recommendations
 
 I (David A. Wheeler) recommend that you primarily pick from one of the following SPDX license expressions,
-since they are all very common and can be combined into larger works:
+since they are all very common and can be combined into larger works (they are
+[GPL-compatible](http://www.dwheeler.com/essays/gpl-compatible.html) and
+[mutually compatible](http://www.dwheeler.com/essays/floss-license-slide.html)):
 
 * MIT.  This is a simple permissive license, useful if you want people to do whatever they want with the software;
   it provides some simple legal protections for developers.
