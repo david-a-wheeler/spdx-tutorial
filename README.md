@@ -38,7 +38,9 @@ Similarly, here are some [free cultural works](http://creativecommons.org/freewo
 
 SPDX license identifiers never contain a space.  SPDX licenses use case-insensitive matching, however, people are encouraged to provide and display the mixed-case forms where reasonable.  In URLs people are encouraged to support both mixed-case and lower-case forms; if that's impractical, convert to lower case (to support case-insensitive matching).
 
-The [SPDX license list](https://spdx.org/licenses/) has a much more complete list of SPDX license identifiers, and is occasionally updated with new ones. As of September 2015 it defines standard license identifiers for over 300 licenses. 
+The [SPDX license list](https://spdx.org/licenses/) has a much more complete list of SPDX license identifiers, and is occasionally updated with new ones.
+Not all licenses in the list are for open source software (OSS) licenses, but it does include the most popular OSS licenses.
+As of September 2015 the SPDX license list defines standard license identifiers for over 300 licenses. 
 
 ## SPDX license expressions
 
