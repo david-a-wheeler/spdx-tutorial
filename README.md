@@ -95,6 +95,7 @@ A few especially important or useful tags are:
     - For an organization: organization name, optionally followed by email in parentheses.
     - For a tool: toolidentifier-version
 * PackageName: The full name of the package as given by Package Originator.
+* PackageOriginator: The person or organization from whom the package originally came. 
 * PackageVersion: The version number of this particular version of the package (optional).
 * PackageHomePage: The package's home page URL.
 * PackageLicenseDeclared: The license identified in text in one or more files (for example a COPYING or LICENSE file)
@@ -103,14 +104,14 @@ A few especially important or useful tags are:
    
 For example, a SPDX file with the following lines states the following:
 this package uses SPDX specification version 2.0 (the current version),
-the license information can be shared with everyone, this SPDX file was created by David A. Wheeler,
-it describes the Foo package, it has the given project home page, and
+the license information can be shared with everyone,
+it describes the Foo package created by David A. Wheeler, it has the given project home page, and
 the package maintainers declare that all the software in this package is released using the MIT license:
 
     SPDXVersion: SPDX-2.0
     DataLicense: CC0-1.0
-    Creator: David A. Wheeler
     PackageName: Foo
+    PackageOriginator: David A. Wheeler
     PackageHomePage: https://github.com/david-a-wheeler/spdx-tutorial/
     PackageLicenseDeclared: MIT
 
