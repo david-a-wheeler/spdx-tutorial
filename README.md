@@ -152,14 +152,24 @@ of representing the license of the software.
 
 ## SPDX license expressions in source code files
 
-You can also refer to SPDX license expressions from source code, instead of trying to
-embed large quantities of legalese in your source code headers.
-This is great because it can replace many lines of legal mumbo-jumbo, in every file, with a simple clear line of text.
-I recommend using a case-sensitive tag "SPDX-License-Expression" in a comment near the top of the file,
-followed by the SPDX license expression.  For example, in a programming language that uses "#" as the
-rest-of-line comment character, use this to express "this software is under GPL version 3.0 or later":
+You can also refer to SPDX license expressions from within source code.
+While embedding a copyright or license statement isn't strictly necessary under copyright,
+there are advantages to doing it.
+For example, they make it easier for people to determine what they're allowed to do, and who to contact
+if they need more... even if the file was quietly copied untracked to a different project.
+The traditional way is annoying; it involves
+embedding large quantities of legalese in your source code headers.
+SPDX can help, because it can replace many lines of legal mumbo-jumbo, in every file, with a simple clear line of text.
+I think best practice is to put it right under a
+[simple copyright notice](http://ben.balter.com/2015/06/03/copyright-notices-for-websites-and-open-source-projects/).
 
-    # SPDX-License-Expression: GPL-3.0+
+I recommend using a case-sensitive tag "SPDX-License-Expression" in a comment near the top of the file,
+followed by the SPDX license expression.
+For example, in a programming language that uses "#" as the
+rest-of-line comment character, use this:
+
+    # Copyright [year project started] - [current year], [project founder] and the [project name] contributors
+    # SPDX-License-Expression: [SPDX license expression]
 
 This should be interpreted using the version of SPDX published when this line
 was added (or modified, if it was modified later).
