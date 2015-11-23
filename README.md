@@ -81,7 +81,7 @@ A tag:value file is normally a sequence of lines, where each line is a tag name,
 
 There are many tags defined in the SPDX specification, but many of them may not apply to your specific situation.
 Note that unlike license expressions, tag names are case-sensitive.
-A few especially important tags are:
+A few especially important or useful tags are:
 
 * SPDXVersion: The version of the spec used, normally "SPDX-2.0".
 * DataLicense: The license for the license data itself (!); normally this is "CC0-1.0".
