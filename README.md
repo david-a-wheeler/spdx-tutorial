@@ -154,8 +154,8 @@ of representing the license of the software.
 ## SPDX license expressions in source code files
 
 You can also refer to SPDX license expressions from within source code.
-While embedding a copyright or license statement isn't strictly necessary under copyright,
-there are advantages to doing it.
+While embedding a copyright or license statement isn't necessary in copyright law,
+there are advantages to including them.
 For example, they make it easier for people to determine what they're allowed to do, and who to contact
 if they need more... even if the file was quietly copied untracked to a different project.
 The traditional way is annoying; it involves
