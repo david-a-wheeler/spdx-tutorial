@@ -207,7 +207,7 @@ The biggest common licensing mistake is failing to put a license on software at 
 Of course, different people have different opinions about what license to use, and licenses
 are often difficult to change later.
 Picking a license depends on your beliefs and goals for a particular project.
-Indeed, the same person or organization is likely to
+Indeed, the same person or organization may
 chose different licenses for different projects, depending on their goals for the project.
 SPDX makes it possible to capture this licensing information in a precise and automated way.
 
