@@ -25,6 +25,7 @@ licenses, followed by what the identifiers mean:
 * BSD-3-Clause :  [BSD 3-clause "New" or "Revised" License](https://spdx.org/licenses/BSD-3-Clause.html)
 * GPL-2.0 : [GNU General Public License version 2.0 only](https://spdx.org/licenses/GPL-2.0.html)
 * GPL-3.0 : [GNU General Public License version 3.0 only](https://spdx.org/licenses/GPL-3.0.html)
+* LGPL-2.1 : [GNU Lesser General Public License v2.1 only](https://spdx.org/licenses/LGPL-2.1.html)
 * LGPL-3.0 : [GNU Lesser General Public License v3.0 only](https://spdx.org/licenses/LGPL-3.0.html)
 * MIT : [The MIT license](https://spdx.org/licenses/MIT.html), aka the expat license;
   note that this is different from the [X11](https://spdx.org/licenses/X11.html) license.
@@ -199,7 +200,7 @@ since they are all very common and can be combined into larger works (they are
 * [Apache-2.0](https://spdx.org/licenses/Apache-2.0.html).
   This is a permissive license but includes an express grant of patent rights from contributors to users;
   this may be useful if you have concerns about patents in the project.
-* [LGPL-2.0+](https://spdx.org/licenses/LGPL-2.0.html).
+* [LGPL-2.1+](https://spdx.org/licenses/LGPL-2.0.html).
   This is a common weakly protective license, which ensures that those who get the executable of the
   software can also get the source code, but allows the software to be used in larger proprietary works.
 * [GPL-2.0+](https://spdx.org/licenses/GPL-2.0.html).
