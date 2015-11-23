@@ -171,8 +171,8 @@ rest-of-line comment character, use this:
     # Copyright [year project started] - [current year], [project founder] and the [project name] contributors
     # SPDX-License-Expression: [SPDX license expression]
 
-This should be interpreted using the version of SPDX published when this line
-was added (or modified, if it was modified later).
+This should be interpreted using the version of SPDX published when the license expression line
+was added (or modified, if this line was modified later).
 Modern version control software, like git, can easily provide this information
 (in git use "git blame").
 
