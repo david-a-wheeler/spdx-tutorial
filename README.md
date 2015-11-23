@@ -159,10 +159,11 @@ This should be interpreted using the version of SPDX published when this line wa
 added or modified.  Modern version control software, like git, can easily provide this information.
 
 [Some](http://esr.ibiblio.org/?p=6867)
-developers use "SPDX-License-Identifier" instead of "SPDX-License-Expression".
-I'm glad they're using SPDX, but I think that particular tag name is a mistake,
-because sometimes you want the full power of SPDX license expressions.
-I think it'd be better if the name made it clear that full license expressions are allowed.
+developers, and the [SPDX website](http://wiki.spdx.org/view/Technical_Team/SPDX_Meta_Tags),
+recommend using "SPDX-License-Identifier:" instead of "SPDX-License-Expression:".
+I find that prefix odd,
+because I think the intent is that these be arbitrary SPDX license expressions (not just license identifiers).
+I've contacted the SPDX maintainers to see if they really mean to use "SPDX-License-Identifier"; stay tuned.
 
 ## License recommendations
 
