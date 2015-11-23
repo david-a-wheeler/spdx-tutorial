@@ -166,15 +166,16 @@ if they need more... even if the file was quietly copied untracked to a differen
 The traditional way is annoying; it involves
 embedding large quantities of legalese in your source code headers.
 SPDX can help, because it can replace many lines of legal mumbo-jumbo, in every file, with a simple clear line of text.
-I think best practice is to put it right under a
-[simple copyright notice](http://ben.balter.com/2015/06/03/copyright-notices-for-websites-and-open-source-projects/).
+I think best practice is to put it right under a simple copyright notice
+(see [Ben Balter's article about copyright notices for open source projects](http://ben.balter.com/2015/06/03/copyright-notices-for-websites-and-open-source-projects/);
+he focuses on project-wide notices, but the principles still apply).
 
 I recommend using a case-sensitive tag "SPDX-License-Expression" in a comment near the top of the file,
 followed by the SPDX license expression.
 For example, in a programming language that uses "#" as the
 rest-of-line comment character, use this:
 
-    # Copyright [year project started] - [current year], [project founder] and the [project name] contributors
+    # Copyright [year file created] - [last year file modified], [project founder] and the [project name] contributors
     # SPDX-License-Expression: [SPDX license expression]
 
 This should be interpreted using the version of SPDX published when the license expression line
