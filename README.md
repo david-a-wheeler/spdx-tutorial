@@ -199,7 +199,7 @@ since they are all very common and can be combined into larger works (they are
 * [Apache-2.0](https://spdx.org/licenses/Apache-2.0.html).
   This is a permissive license but includes an express grant of patent rights from contributors to users;
   this may be useful if you have concerns about patents in the project.
-* [LGPL-2.0+]((https://spdx.org/licenses/LGPL-2.0.html).
+* [LGPL-2.0+](https://spdx.org/licenses/LGPL-2.0.html).
   This is a common weakly protective license, which ensures that those who get the executable of the
   software can also get the source code, but allows the software to be used in larger proprietary works.
 * [GPL-2.0+](https://spdx.org/licenses/GPL-2.0.html).
