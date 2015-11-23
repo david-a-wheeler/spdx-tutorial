@@ -268,7 +268,7 @@ The [CC0-1.0](https://spdx.org/licenses/CC0-1.0.html), [CC-BY-4.0](https://spdx.
 and [CC-BY-SA-4.0](https://spdx.org/licenses/CC-BY-SA-4.0.html) licenses are just
 fine for ordinary textual and artistic works.
 
-SDPX won't decide for you, but SPDX does make it easy for everyone to know what license(s) were selected.
+SDPX won't decide a license for you, but SPDX does make it easy for everyone to know what license(s) were selected.
 
 ## More information
 
