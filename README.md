@@ -200,7 +200,7 @@ This normally means that nobody else may reproduce, distribute, or create deriva
 There are exceptions due to "Fair Use" (US) and "Fair Dealing" (Europe), but these are far weaker than you might think.
 Before 1976 omitting a copyright statement meant there was no federal copyright in the US,
 but that simply isn't true today.
-[Simon Phipps' Why all software needs a license"](http://www.infoworld.com/article/2839560/open-source-software/sticking-a-license-on-everything.html)
+[Simon Phipps' "Why all software needs a license"](http://www.infoworld.com/article/2839560/open-source-software/sticking-a-license-on-everything.html)
 further explains why software needs a license.
 The biggest common licensing mistake is failing to put a license on software at all.
 
