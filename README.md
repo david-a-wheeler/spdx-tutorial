@@ -212,8 +212,9 @@ Indeed, the same person or organization may
 chose different licenses for different projects, depending on their goals for the project.
 SPDX makes it possible to capture this licensing information in a precise and automated way.
 
-I (David A. Wheeler) recommend that you primarily pick from one of the following SPDX license expressions,
-since they are all very common and can be combined into larger works (they are
+I (David A. Wheeler) recommend that you primarily pick from one of the following SPDX license expressions
+when releasing open source software,
+since all of these licenses are very common and can be combined into larger works (they are
 [GPL-compatible](http://www.dwheeler.com/essays/gpl-compatible.html) and
 [mutually compatible](http://www.dwheeler.com/essays/floss-license-slide.html)):
 
