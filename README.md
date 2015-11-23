@@ -4,6 +4,7 @@ Software Package Data Exchange (SPDX) is a standard format for communicating the
 and copyrights associated with software packages.
 SPDX is easy to use for common cases,
 and SPDX makes it easy for all software recipients to know what they're allowed to do (and not do).
+SPDX was created and is maintained by the Linux Foundation.
 
 [This is a brief tutorial about SPDX](#spdx-tutorial).
 To use SPDX you need to understand three basic constructs:
