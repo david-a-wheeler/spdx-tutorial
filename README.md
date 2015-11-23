@@ -193,6 +193,24 @@ I've contacted the SPDX maintainers to see if they really mean to use "SPDX-Lice
 
 ## License recommendations
 
+Make *sure* you include a license on any software you're releasing.
+[Having no license does not mean you're opting out of copyright law](http://choosealicense.com/no-license/).
+Generally speaking, around the world the absence of a license means that default copyright laws apply.
+This normally means that nobody else may reproduce, distribute, or create derivative works from your work.
+There are exceptions due to "Fair Use" (US) and "Fair Dealing" (Europe), but these are far weaker than you might think.
+Before 1976 omitting a copyright statement meant there was no federal copyright in the US,
+but simply isn't true today.
+[Simon Phipps' Why all software needs a license"](http://www.infoworld.com/article/2839560/open-source-software/sticking-a-license-on-everything.html)
+further explains why software needs a license.
+The biggest common licensing mistake is failing to put a license on software at all.
+
+Of course, different people have different opinions about what license to use, and licenses
+are often difficult to change later.
+Picking a license depends on your beliefs and goals for a particular project.
+Indeed, the same person or organization is likely to
+chose different licenses for different projects, depending on their goals for the project.
+SPDX makes it possible to capture this licensing information in a precise and automated way.
+
 I (David A. Wheeler) recommend that you primarily pick from one of the following SPDX license expressions,
 since they are all very common and can be combined into larger works (they are
 [GPL-compatible](http://www.dwheeler.com/essays/gpl-compatible.html) and
@@ -249,23 +267,7 @@ The [CC0-1.0](https://spdx.org/licenses/CC0-1.0.html), [CC-BY-4.0](https://spdx.
 and [CC-BY-SA-4.0](https://spdx.org/licenses/CC-BY-SA-4.0.html) licenses are just
 fine for ordinary textual and artistic works.
 
-Make *sure* you include a license on any software you're releasing.
-[Having no license does not mean you're opting out of copyright law](http://choosealicense.com/no-license/).
-Generally speaking, around the world the absence of a license means that default copyright laws apply.
-This normally means that nobody else may reproduce, distribute, or create derivative works from your work.
-There are exceptions due to "Fair Use" (US) and "Fair Dealing" (Europe), but these are far weaker than you might think.
-Before 1976 omitting a copyright statement meant there was no federal copyright in the US,
-but simply isn't true today.
-[Simon Phipps' Why all software needs a license"](http://www.infoworld.com/article/2839560/open-source-software/sticking-a-license-on-everything.html)
-further explains why software needs a license.
-The biggest common licensing mistake is failing to put a license on software at all.
-
-Of course, different people have different opinions about what license to use, and licenses
-are often difficult to change later.
-Picking a license depends on your beliefs and goals for a particular project.
-Indeed, the same person or organization is likely to
-chose different licenses for different projects, depending on their goals for the project.
-SPDX makes it possible to capture this licensing information in a precise and automated way.
+SDPX won't decide for you, but SPDX does make it easy for everyone to know what license(s) were selected.
 
 ## More information
 
