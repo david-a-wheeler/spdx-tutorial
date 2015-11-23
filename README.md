@@ -6,10 +6,13 @@ SPDX is easy to use for common cases,
 and SPDX makes it easy for all software recipients to know what they're allowed to do (and not do).
 
 This is a brief tutorial about SPDX.
-To use SPDX you need to understand three basic constructs: SPDX license identifiers,
-SPDX license expressions, and SPDX files.
-This tutorial will also discuss how to use SPDX license expressions in source code files, and how to
-get more information.
+To use SPDX you need to understand three basic constructs:
+[SPDX license identifiers](#spdx-license-identifiers),
+[SPDX license expressions](#spdx-license-expressions), and [SPDX files](#spdx-files).
+This tutorial will also discuss how to use
+[SPDX license expressions in source code files](#spdx-license-expressions-in-source-code-files),
+[license recommendations](#license-recommendations), and how to
+[get more information](#more-information).
 
 ## SPDX license identifiers
 
