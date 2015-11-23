@@ -227,12 +227,13 @@ it is often impractical to use at today's Internet scale due to its "obnoxious a
 SPDX solves this problem of ambiguity; instead of saying "BSD license" (which is dangerously vague), you can use
 a precise SPDX license expression.  SPDX can make licenses in this family much easier for everyone to use and understand.
 
-I recommend that people *not* use [CC0-1.0 (public domain)](https://spdx.org/licenses/CC0-1.0.html) for software,
+I recommend that people *not* use [CC0-1.0](https://spdx.org/licenses/CC0-1.0.html) for software,
 especially if you're not a government employee.
-[CC0-1.0](https://spdx.org/licenses/CC0-1.0.html) releases material to the public domain
-and fails to include disclaimers of warranty and merchantability.
-These disclaimers provide a small amount of legal protection at no cost; you should use them.
-Governments sometimes use CC0, but for them the legal protections are less important
+[CC0-1.0](https://spdx.org/licenses/CC0-1.0.html) essentially releases material to the public domain,
+and thus fails to include disclaimers of warranty and merchantability.
+These disclaimers provide a small amount of legal protection at no cost; you should use them
+when releasing software.
+Governments sometimes use CC0, but for them these legal protections are less important
 (it's harder to sue governments).
 I recommend using the [MIT](https://spdx.org/licenses/MIT.html) license instead for software.
 Reasonable alternatives if you want *short* permissive software licenses include
