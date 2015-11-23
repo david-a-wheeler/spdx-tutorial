@@ -75,9 +75,9 @@ SPDX expressions are case-insensitive, but by convention the operation names sho
 ## SPDX Files
 
 SPDX files are a way to capture and exchange license information.
-The SPDX specification actually supports two formats: tag/value and RDF/XML.
-They can do the same thing, but tag/value is easier to write, so that's what we'll use here.
-A tag/value file is normally a sequence of lines, where each line is a tag name, a colon, a space, and its value.
+The SPDX specification actually supports two formats: tag:value and RDF/XML.
+They can do the same thing, but tag:value is easier to write, so that's what we'll use here.
+A tag:value file is normally a sequence of lines, where each line is a tag name, a colon, a space, and its value.
 
 There are many tags defined in the SPDX specification, but many of them may not apply to your specific situation.
 Note that unlike license expressions, tag names are case-sensitive.
@@ -131,7 +131,7 @@ need that additional information when they do legal review, and that's what thos
 If you are in that more complicated circumstance, see the SPDX site for information about tools that can help you.
 
 The SPDX specification doesn't specify a file extension or file naming convention.
-I personally recommend using ".spdx" for a SDPX file in tag-value format (as described here),
+I personally recommend using ".spdx" for a SDPX file in tag:value format (as described here),
 and using ".rdf" for a SDPX file in RDF+XML format.
 When combining SDPX files together people often use the project name as the filename.
 Personally, I think having a file named
