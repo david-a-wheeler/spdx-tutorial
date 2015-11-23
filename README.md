@@ -72,6 +72,10 @@ Any license expression that consists of more than one license identifier and/or 
 encapsulated by parentheses.
 SPDX expressions are case-insensitive, but by convention the operation names should be capitalized.
 
+To me, license identifiers and license expressions are the real reasons to use SPDX.
+However, both are less useful unless you can *put* their information somewhere.
+So let's talk about two ways to do that: SPDX files and embedding license information in source files.
+
 ## SPDX Files
 
 SPDX files are a way to capture and exchange license information.
@@ -150,6 +154,7 @@ of representing the license of the software.
 
 You can also refer to SPDX license expressions from source code, instead of trying to
 embed large quantities of legalese in your source code headers.
+This is great because it can replace many lines of legal mumbo-jumbo, in every file, with a simple clear line of text.
 I recommend using a case-sensitive tag "SPDX-License-Expression" in a comment near the top of the file,
 followed by the SPDX license expression.  For example, in a programming language that uses "#" as the
 rest-of-line comment character, use this to express "this software is under GPL version 3.0 or later":
@@ -166,7 +171,8 @@ developers, and the [SPDX website](http://wiki.spdx.org/view/Technical_Team/SPDX
 recommend using "SPDX-License-Identifier:" instead of "SPDX-License-Expression:".
 I find that prefix odd,
 because I think the intent is that these be arbitrary SPDX license expressions (not just license identifiers).
-I've contacted the SPDX maintainers to see if they really mean to use "SPDX-License-Identifier"; stay tuned.
+I've contacted the SPDX maintainers to see if they really mean to use "SPDX-License-Identifier";
+[stay tuned](https://bugs.linuxfoundation.org/show_bug.cgi?id=1330).
 
 ## License recommendations
 
