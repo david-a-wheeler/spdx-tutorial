@@ -226,6 +226,7 @@ since they are all very common and can be combined into larger works (they are
 * [LGPL-2.1+](https://spdx.org/licenses/LGPL-2.0.html).
   This is a common weakly protective license, which ensures that those who get the executable of the
   software can also get the source code, but allows the software to be used in larger proprietary works.
+  A plausible alternative for this purpose is [LGPL-3.0+](https://spdx.org/licenses/LGPL-3.0.html).
 * [GPL-2.0+](https://spdx.org/licenses/GPL-2.0.html).
   This is a common strongly protective license, which ensures that those who get the executable of the
   software can also get the source code.  Selecting "GPL-3.0+" is also a reasonable choice, but is incompatible
