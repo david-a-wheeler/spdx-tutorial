@@ -202,8 +202,8 @@ a precise SPDX license expression.  SPDX can make licenses in this family much e
 Of course, different people have different opinions about what license to use, and licenses
 are often difficult to change later.
 Picking a license depends on your beliefs and goals for a particular project.
-Indeed, the same person is likely to
-chose different licenses for different projects, depending on the goals of the project.
+Indeed, the same person or organization is likely to
+chose different licenses for different projects, depending on their goals for the project.
 SPDX makes it possible to capture this licensing information in a precise and automated way.
 
 ## More information
