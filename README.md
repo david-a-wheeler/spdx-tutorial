@@ -26,7 +26,8 @@ licenses, followed by what the identifiers mean:
 * GPL-2.0 : [GNU General Public License version 2.0 only](https://spdx.org/licenses/GPL-2.0.html)
 * GPL-3.0 : [GNU General Public License version 3.0 only](https://spdx.org/licenses/GPL-3.0.html)
 * LGPL-3.0 : [GNU Lesser General Public License v3.0 only](https://spdx.org/licenses/LGPL-3.0.html)
-* MIT : [The MIT license](https://spdx.org/licenses/MIT.html), aka the expat license; note that this is different from the [X11](https://spdx.org/licenses/X11.html) license.
+* MIT : [The MIT license](https://spdx.org/licenses/MIT.html), aka the expat license;
+  note that this is different from the [X11](https://spdx.org/licenses/X11.html) license.
 
 Similarly, here are some [free cultural works](http://creativecommons.org/freeworks) licenses
 (typically used for works other than software):
@@ -192,17 +193,24 @@ since they are all very common and can be combined into larger works (they are
 [GPL-compatible](http://www.dwheeler.com/essays/gpl-compatible.html) and
 [mutually compatible](http://www.dwheeler.com/essays/floss-license-slide.html)):
 
-* MIT.  This is a simple permissive license, useful if you want people to do whatever they want with the software;
+* [MIT](https://spdx.org/licenses/MIT.html).
+  This is a simple permissive license, useful if you want people to do whatever they want with the software;
   it provides some simple legal protections for developers.
-* Apache-2.0.  This is a permissive license but includes an express grant of patent rights from contributors to users;
+* [Apache-2.0](https://spdx.org/licenses/Apache-2.0.html).
+  This is a permissive license but includes an express grant of patent rights from contributors to users;
   this may be useful if you have concerns about patents in the project.
-* LGPL-2.0+.  This is a common weakly protective license, which ensures that those who get the executable of the
+* [LGPL-2.0+]((https://spdx.org/licenses/LGPL-2.0.html).
+  This is a common weakly protective license, which ensures that those who get the executable of the
   software can also get the source code, but allows the software to be used in larger proprietary works.
-* GPL-2.0+.  This is a common strongly protective license, which ensures that those who get the executable of the
+* [GPL-2.0+](https://spdx.org/licenses/GPL-2.0.html).
+  This is a common strongly protective license, which ensures that those who get the executable of the
   software can also get the source code.  Selecting "GPL-3.0+" is also a reasonable choice, but is incompatible
-  with programs that are GPL-2.0 only.
+  with programs that are GPL-2.0 only.  GPL-2.0 only also has compatibility issues with
+  [Apache-2.0](https://spdx.org/licenses/Apache-2.0.html).
 
 The list above is extremely similar to the recommendations in GitHub's [ChooseALicense.com](http://choosealicense.com/).
+If you're just completely confused and can't decide, start with [MIT](https://spdx.org/licenses/MIT.html);
+you can release later versions (even if they include others' work) using a different license.
 
 Most of the BSD licenses are perfectly reasonable as permissive licenses.
 In particular, the licenses identified in SPDX as
@@ -217,6 +225,17 @@ in my opinion (and [others](http://www.gnu.org/philosophy/bsd.en.html))
 it is often impractical to use at today's Internet scale due to its "obnoxious advertizing clause".
 SPDX solves this problem of ambiguity; instead of saying "BSD license" (which is dangerously vague), you can use
 a precise SPDX license expression.  SPDX can make licenses in this family much easier for everyone to use and understand.
+
+I recommend that people not use [CC0-1.0](https://spdx.org/licenses/CC0-1.0.html) for software, especially
+if you're not a government.  [CC0-1.0](https://spdx.org/licenses/CC0-1.0.html) releases material to the public domain
+and fails to include disclaimers of warranty and merchantability.
+These diclaimers provide a small amount of legal protection at no cost; you should use them.
+I recommend using the [MIT](https://spdx.org/licenses/MIT.html) license instead.
+Reasonable alternatives if you want *short* permissive licenses include
+[BSD-2-Clause (the BSD 2-clause "Simplified" License)](https://spdx.org/licenses/BSD-2-Clause.html),
+[BSD-3-Clause (BSD 3-clause "New" or "Revised" License)](https://spdx.org/licenses/BSD-3-Clause.html),
+[0BSD (BSD Zero Clause License)](https://spdx.org/licenses/0BSD.html), and
+the [Unlicense](https://spdx.org/licenses/Unlicense.html).
 
 Of course, different people have different opinions about what license to use, and licenses
 are often difficult to change later.
