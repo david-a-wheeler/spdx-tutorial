@@ -265,7 +265,7 @@ Reasonable alternatives if you want *short* permissive software licenses include
 [0BSD (BSD Zero Clause License)](https://spdx.org/licenses/0BSD.html), and
 the [Unlicense](https://spdx.org/licenses/Unlicense.html).
 
-[Creative Commons does not recommend using Creative Commons licenses for software](https://wiki.creativecommons.org/wiki/Frequently_Asked_Questions#Can_I_apply_a_Creative_Commons_license_to_software.3F),
+[Creative Commons recommend not using Creative Commons licenses for software](https://wiki.creativecommons.org/wiki/Frequently_Asked_Questions#Can_I_apply_a_Creative_Commons_license_to_software.3F),
 and I agree with their assessment.
 For example, their licenses do not address the issues of source code distribution or patents.
 The [CC0-1.0](https://spdx.org/licenses/CC0-1.0.html), [CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html),
