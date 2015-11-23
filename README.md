@@ -249,6 +249,17 @@ The [CC0-1.0](https://spdx.org/licenses/CC0-1.0.html), [CC-BY-4.0](https://spdx.
 and [CC-BY-SA-4.0](https://spdx.org/licenses/CC-BY-SA-4.0.html) licenses are just
 fine for ordinary textual and artistic works.
 
+The biggest mistake is failing to put a license on software at all.
+[Having no license does not mean you're opting out of copyright law](http://choosealicense.com/no-license/).
+Generally speaking, around the world the absence of a license means that default copyright laws apply.
+This normally means that nobody else may reproduce, distribute, or create derivative works from your work.
+There are exceptions due to "Fair Use" and "Fair Dealing", but these are far weaker than you might think.
+It's true that in the U.S. before 1976 omitting a copyright statement meant there was no federal copyright,
+but that was decades ago and simply isn't true today.
+[Simon Phipps' Why all software needs a license"](http://www.infoworld.com/article/2839560/open-source-software/sticking-a-license-on-everything.html)
+further explains why software needs a license.
+Make *sure* you put some license statement on your software if you're releasing it.
+
 Of course, different people have different opinions about what license to use, and licenses
 are often difficult to change later.
 Picking a license depends on your beliefs and goals for a particular project.
