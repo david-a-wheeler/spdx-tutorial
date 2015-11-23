@@ -5,7 +5,7 @@ and copyrights associated with software packages.
 SPDX is easy to use for common cases,
 and SPDX makes it easy for all software recipients to know what they're allowed to do (and not do).
 
-This is a brief tutorial about SPDX.
+[This is a brief tutorial about SPDX](#spdx-tutorial).
 To use SPDX you need to understand three basic constructs:
 [SPDX license identifiers](#spdx-license-identifiers),
 [SPDX license expressions](#spdx-license-expressions), and [SPDX files](#spdx-files).
