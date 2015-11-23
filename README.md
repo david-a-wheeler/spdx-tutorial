@@ -91,6 +91,7 @@ A few especially important tags are:
     - For an organization: organization name, optionally followed by email in parentheses.
     - For a tool: toolidentifier-version
 * PackageName: The full name of the package as given by Package Originator.
+* PackageVersion: The version number of this particular version of the package (optional).
 * PackageHomePage: The package's home page URL.
 * PackageLicenseDeclared: The license identified in text in one or more files (for example a COPYING or LICENSE file)
   in the source code package.  This field is not intended to capture license information
