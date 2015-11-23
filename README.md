@@ -232,7 +232,8 @@ since they are all very common and can be combined into larger works (they are
   [Apache-2.0](https://spdx.org/licenses/Apache-2.0.html).
 
 The list above is extremely similar to the recommendations in GitHub's [ChooseALicense.com](http://choosealicense.com/).
-If you're just completely confused and can't decide, start with [MIT](https://spdx.org/licenses/MIT.html);
+If you're just completely confused and can't decide, I recommend that you
+start with [MIT](https://spdx.org/licenses/MIT.html);
 you can release later versions (even if they include others' work) using a different license.
 
 Most of the BSD licenses are perfectly reasonable as permissive licenses.
