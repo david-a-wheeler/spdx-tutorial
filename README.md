@@ -264,10 +264,22 @@ Reasonable alternatives if you want *short* permissive software licenses include
 [BSD-3-Clause (BSD 3-clause "New" or "Revised" License)](https://spdx.org/licenses/BSD-3-Clause.html),
 [0BSD (BSD Zero Clause License)](https://spdx.org/licenses/0BSD.html), and
 the [Unlicense](https://spdx.org/licenses/Unlicense.html).
+
+[Creative Commons does not recommend using Creative Commons licenses for software](https://wiki.creativecommons.org/wiki/Frequently_Asked_Questions#Can_I_apply_a_Creative_Commons_license_to_software.3F),
+and I agree with their assessment.
+For example, their licenses do not address the issues of source code distribution or patents.
 The [CC0-1.0](https://spdx.org/licenses/CC0-1.0.html), [CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html),
 and [CC-BY-SA-4.0](https://spdx.org/licenses/CC-BY-SA-4.0.html) licenses are just
-fine for ordinary textual and artistic works.
+fine for other purposes, such as ordinary textual and artistic works.
+SPDX does have license identifiers for the "no derivatives" and "non-commercial" Creative Commons licenses,
+but note that by definition these are not OSS nor [free culture](https://creativecommons.org/freeworks) licenses.
 
+I recommend in most cases against using the
+[BSD-4-Clause (BSD 4-clause "Original" or "Old" License)](https://spdx.org/licenses/BSD-4-Clause.html) and
+[EPL-1.0 (Eclipse Public License version 1.0)](https://spdx.org/licenses/EPL-1.0.html) licenses,
+in part because they are not [GPL-compatible](http://www.dwheeler.com/essays/gpl-compatible.html).
+
+You may disagree with my license recommendations, or a have a special circumstance.  That's okay.
 SDPX won't decide a license for you, but SPDX does make it easy for everyone to know what license(s) were selected.
 
 ## More information
