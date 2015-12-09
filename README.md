@@ -1,10 +1,17 @@
 # SPDX Tutorial
 
-Software Package Data Exchange (SPDX) is a standard format for communicating the components, licenses,
-and copyrights associated with software packages.
+Software Package Data Exchange (SPDX) is a standard format
+for communicating the components, licenses,
+and copyrights associated with software packages; it includes
+several mechanisms that are especially useful for open source software.
+If you're developing open source software,
+a developer who is considering the use of some open source software,
+or someone who has to investigate if
+software has acceptable licenses, SPDX may help.
 SPDX is easy to use for common cases,
-and SPDX makes it easy for all software recipients to know what they're allowed to do (and not do).
-SPDX was created and is maintained by the Linux Foundation.
+and SPDX makes it easy for all software recipients to know what
+they're allowed to do (and not do).
+SPDX was created by, and is maintained by, the Linux Foundation.
 
 [This is a brief tutorial about SPDX](#spdx-tutorial).
 To use SPDX you need to understand three basic constructs:
@@ -46,22 +53,31 @@ SPDX license identifiers never contain a space.  SPDX licenses use case-insensit
 
 The [SPDX license list](https://spdx.org/licenses/) has a much more complete list of SPDX license identifiers, and is occasionally updated with new ones.
 Not all licenses in the list are open source software (OSS) licenses, but the list does include the most popular OSS licenses.
-As of September 2015 the SPDX license list defines standard license identifiers for over 300 licenses. 
+As of September 2015 the SPDX license list defines
+standard license identifiers for over 300 licenses. 
 
 ## SPDX license expressions
 
-In some situations there isn't just one license, e.g., software might be offered with a choice between two or more licenses.
-SPDX version 2.0 added support for SPDX *license expressions*, which let you clearly express this when you need to.
+In some situations there isn't just one license, e.g., software might be
+offered with a choice between two or more licenses.
+SPDX version 2.0, released in 2015, added support for
+SPDX *license expressions*, which let you clearly express choices
+when you need to.
 
-A SPDX license expression can be simple SPDX license identifier or a SPDX "user defined license reference" (aka LicenseRef).
-A LicenseRef can be used if a license isn't already defined by a standard SPDX license identifier.
-We won't go into *how* you do that in this tutorial... but it's good to know you *can* do it.
+A SPDX license expression can be simple SPDX license identifier or a SPDX
+"user defined license reference" (aka LicenseRef).
+A LicenseRef can be used if a license isn't already defined by a standard
+SPDX license identifier.
+We won't go into *how* you do that in this tutorial... but it's good to
+know you *can* do it.
 
-SPDX license expressions also support a "+" suffix after a license identifier; the "+" means
-"this license or any later version".  For example, you can express "GNU General Public License (GPL) version 2.0 or later"
-using the SPDX license expression "GPL-2.0+".
+SPDX license expressions also support a "+" suffix after a license
+identifier; the "+" means "this license or any later version".
+For example, you can express "GNU General Public License (GPL) version
+2.0 or later" using the SPDX license expression "GPL-2.0+".
 
-You can also use three different operators to combine license expressions to create other license expressions:
+You can also use three different operators to combine license expressions
+to create other license expressions:
 
 * "OR": Recipients can choose between two or more licenses.
   For example, "(LGPL-2.1 OR MIT OR BSD-3-Clause)" means recipients can choose between any of those three licenses.
@@ -73,21 +89,27 @@ You can also use three different operators to combine license expressions to cre
   standard names for license exceptions.
 
 There is an order of operations: "+", then "WITH", then "AND", then "OR".
-This order can be overridden by parentheses, and if it's complex parentheses are good for clarity.
-Any license expression that consists of more than one license identifier and/or LicenseRef should be 
-encapsulated by parentheses.
-SPDX expressions are case-insensitive, but by convention the operation names should be capitalized.
+This order can be overridden by parentheses, and if it's complex
+parentheses are good for clarity.
+Any license expression that consists of more than one license identifier
+and/or LicenseRef should be encapsulated by parentheses.
+SPDX expressions are case-insensitive, but by convention the operation
+names should be capitalized.
 
-To me, license identifiers and license expressions are the real reasons to use SPDX.
+To me, license identifiers and license expressions
+are the real reasons to use SPDX.
 However, both are less useful unless you can *put* their information somewhere.
-So let's talk about two ways to do that: SPDX files and embedding license information in source files.
+So let's talk about two ways to do that: SPDX files and embedding license
+information in source files.
 
 ## SPDX Files
 
 SPDX files are a way to capture and exchange license information.
 The SPDX specification actually supports two formats: tag:value and RDF/XML.
-They can do the same thing, but tag:value is easier to write, so that's what we'll use here.
-A tag:value file is normally a sequence of lines, where each line is a tag name, a colon, a space, and its value.
+They can do the same thing, but tag:value is easier to write, so that's
+what we'll use here.
+A tag:value file is normally a sequence of lines, where each line is a
+tag name, a colon, a space, and its value.
 
 There are many tags defined in the SPDX specification, but many of them may not apply to your specific situation.
 Note that unlike license expressions, tag names are case-sensitive.
