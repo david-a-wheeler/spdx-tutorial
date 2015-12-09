@@ -214,6 +214,22 @@ because I think the intent is that these be arbitrary SPDX license expressions (
 I've contacted the SPDX maintainers to see if they really mean to use "SPDX-License-Identifier";
 [stay tuned](https://bugs.linuxfoundation.org/show_bug.cgi?id=1330).
 
+## Recording license information in an OSS project
+
+If you're developing open source software (OSS) you should *still*
+include the full legal text of your license(s).
+Include them at the top level of the project repository, with the
+conventional all-upper-case filename *LICENSE* or *COPYING*
+(optionally with a .txt or .md extension).
+
+The full legal text is still important for humans to read.
+If it's single simple license, great.  If it's complicated, you can
+express all that complication as well.
+
+What SPDX does is create a simple format for licenses that is
+*machine-readable* (to help automatino) and
+*short* (to help humans quickly handle common cases).
+
 ## License recommendations
 
 Make *sure* you include a license on any software you're releasing.
