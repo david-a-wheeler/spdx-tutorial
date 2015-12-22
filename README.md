@@ -167,7 +167,8 @@ If you are in that more complicated circumstance, see the SPDX site for informat
 
 The SPDX specification doesn't specify a file extension or file naming convention.
 I personally recommend using ".spdx" for a SDPX file in tag:value format (as described here),
-and using ".rdf" for a SDPX file in RDF+XML format.
+and using ".rdf" for a SDPX file in RDF+XML format
+([this appears to be a best practice](https://bugs.linuxfoundation.org/show_bug.cgi?id=1329)).
 When combining SDPX files together people often use the project name as the filename.
 Personally, I think having a file named
 "LICENSE.spdx" at the top level would be perfectly reasonable when including a SPDX file inside a single project.
