@@ -183,10 +183,12 @@ of representing the license of the software.
 ## SPDX license expressions in source code files
 
 You can also refer to SPDX license expressions from within source code.
-While embedding a copyright or license statement in every file isn't necessary in copyright law,
+Embedding a copyright or license statement in every file
+isn't required by copyright law, but
 there are advantages to including them.
-For example, they make it easier for people to determine what they're allowed to do, and who to contact
-if they need more... even if the file was quietly copied untracked to a different project.
+For example, they make it easier for people to determine what they're
+allowed to do, and who to contact if they need more...
+even if the file was quietly copied untracked to a different project.
 The traditional way is annoying; it involves
 embedding large quantities of legalese in your source code headers.
 SPDX can help, because it can replace many lines of legal mumbo-jumbo, in every file, with a simple clear line of text.
@@ -194,26 +196,30 @@ I think best practice is to put it right under a simple copyright notice
 (see [Ben Balter's article about copyright notices for open source projects](http://ben.balter.com/2015/06/03/copyright-notices-for-websites-and-open-source-projects/);
 he focuses on project-wide notices, but the principles still apply).
 
-I recommend using a case-sensitive tag "SPDX-License-Expression" in a comment near the top of the file,
+The recommended way is to add a case-sensitive tag
+"SPDX-License-Identifier: " in a comment near the top of the file,
 followed by the SPDX license expression.
 For example, in a programming language that uses "#" as the
 rest-of-line comment character, use this:
 
     # Copyright [year file created] - [last year file modified], [project founder] and the [project name] contributors
-    # SPDX-License-Expression: [SPDX license expression]
+    # SPDX-License-Identifier: [SPDX license expression]
 
-This should be interpreted using the version of SPDX published when the license expression line
-was added (or modified, if this line was modified later).
+This should be interpreted using the version of SPDX published
+when the line was added (or modified, if this line was modified later).
 Modern version control software, like git, can easily provide this information
 (in git use "git blame").
 
-[Some](http://esr.ibiblio.org/?p=6867)
-developers, and the [SPDX website](http://wiki.spdx.org/view/Technical_Team/SPDX_Meta_Tags),
-recommend using "SPDX-License-Identifier:" instead of "SPDX-License-Expression:".
-I find that prefix odd,
-because I think the intent is that these be arbitrary SPDX license expressions (not just license identifiers).
-I've contacted the SPDX maintainers to see if they really mean to use "SPDX-License-Identifier";
-[stay tuned](https://bugs.linuxfoundation.org/show_bug.cgi?id=1330).
+Note that the prefix name is for a license identifier, but in fact
+allows the more complex license expression.
+This is a historical accident.
+Older versions of SPDX only allowed license identifiers, so that's
+the name in common use
+(e.g., [here](http://esr.ibiblio.org/?p=6867)).
+For backwards-compatibility, the SPDX folks have decided to
+[keep the old name](https://bugs.linuxfoundation.org/show_bug.cgi?id=1330).
+That's a little odd, but no big deal; the key is that there's a way
+to provide the information.
 
 ## Recording license information in an OSS project
 
