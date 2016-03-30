@@ -101,26 +101,22 @@ names should be capitalized.
 To me, license identifiers and license expressions
 are the real reasons to use SPDX.
 However, both are less useful unless you can *put* their information somewhere.
-So let's talk about three ways to do that:
-package manager license fields,
-SPDX files, and embedding license
-information in source files.
-
-## Package manager license fields
 
 Most programming languages have a language library package manager,
 and most systems have a system-level package manager;
 each package manager has a package format.
-In almost all of them there is a "license" field;
+In almost all of them there is a "license" field, and in most cases
 you can simply use a SPDX license expression in that field.
 
-However, it's often useful to have a standard location and format
-that is language-independent; this is the role of SPDX files
-embedded in a package by its developers.
+There are also two other ways to capture this information:
+SPDX files and embedding license information in source files.
+Here I'll especially focus on how software developers can use them.
 
 ## SPDX Files
 
-SPDX files are a way to capture and exchange license information.
+SPDX files are a way to capture and exchange license information
+in a way that is independent of the programming language(s) and package
+manager(s) used.
 The SPDX specification actually supports two formats: tag:value and RDF/XML.
 They can do the same thing, but tag:value is easier to write, so that's
 what we'll use here.
