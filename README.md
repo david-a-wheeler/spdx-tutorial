@@ -12,6 +12,8 @@ SPDX is easy to use for common cases,
 and SPDX makes it easy for all software recipients to know what
 they're allowed to do (and not do).
 SPDX was created by, and is maintained by, the Linux Foundation.
+I recommend pronouncing SPDX as "speed-X"; some of its developers
+pronounce each letter ("S-P-D-X").
 
 [This is a brief tutorial about SPDX](#spdx-tutorial).
 To use SPDX you need to understand three basic constructs:
