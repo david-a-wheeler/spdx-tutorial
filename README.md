@@ -101,8 +101,22 @@ names should be capitalized.
 To me, license identifiers and license expressions
 are the real reasons to use SPDX.
 However, both are less useful unless you can *put* their information somewhere.
-So let's talk about two ways to do that: SPDX files and embedding license
+So let's talk about three ways to do that:
+package manager license fields,
+SPDX files, and embedding license
 information in source files.
+
+## Package manager license fields
+
+Most programming languages have a language library package manager,
+and most systems have a system-level package manager;
+each package manager has a package format.
+In almost all of them there is a "license" field;
+you can simply use a SPDX license expression in that field.
+
+However, it's often useful to have a standard location and format
+that is language-independent; this is the role of SPDX files
+embedded in a package by its developers.
 
 ## SPDX Files
 
