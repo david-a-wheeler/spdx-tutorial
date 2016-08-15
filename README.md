@@ -246,7 +246,7 @@ If it's single simple license, great.  If it's complicated, you can
 express all that complication as well.
 
 What SPDX does is create a simple format for licenses that is
-*machine-readable* (to help automatino) and
+*machine-readable* (to help automation) and
 *short* (to help humans quickly handle common cases).
 
 ## License recommendations
