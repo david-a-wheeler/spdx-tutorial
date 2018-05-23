@@ -32,16 +32,18 @@ Here are some SPDX license identifiers (in alphabetical order) for some widely-u
 [free](http://www.gnu.org/philosophy/free-sw.en.html)/libre/[open source software](https://opensource.org/osd-annotated)
 licenses, followed by what the identifiers mean:
 
-* AGPL-3.0 : [GNU Affero General Public License v3.0](https://spdx.org/licenses/AGPL-3.0.html)
+* AGPL-3.0-only : [GNU Affero General Public License v3.0](https://spdx.org/licenses/AGPL-3.0.html)
 * Apache-2.0 : [Apache License 2.0](https://spdx.org/licenses/Apache-2.0.html)
 * BSD-2-Clause : [BSD 2-clause "Simplified" License](https://spdx.org/licenses/BSD-2-Clause.html)
 * BSD-3-Clause :  [BSD 3-clause "New" or "Revised" License](https://spdx.org/licenses/BSD-3-Clause.html)
-* GPL-2.0 : [GNU General Public License version 2.0 only](https://spdx.org/licenses/GPL-2.0.html)
-* GPL-3.0 : [GNU General Public License version 3.0 only](https://spdx.org/licenses/GPL-3.0.html)
-* LGPL-2.1 : [GNU Lesser General Public License v2.1 only](https://spdx.org/licenses/LGPL-2.1.html)
-* LGPL-3.0 : [GNU Lesser General Public License v3.0 only](https://spdx.org/licenses/LGPL-3.0.html)
+* GPL-2.0-only : [GNU General Public License version 2.0 only](https://spdx.org/licenses/GPL-2.0-only.html)
+* GPL-3.0-only : [GNU General Public License version 3.0 only](https://spdx.org/licenses/GPL-3.0-only.html)
+* LGPL-2.1-only : [GNU Lesser General Public License v2.1 only](https://spdx.org/licenses/LGPL-2.1-only.html)
+* LGPL-3.0-only : [GNU Lesser General Public License v3.0 only](https://spdx.org/licenses/LGPL-3.0-only.html)
 * MIT : [The MIT license](https://spdx.org/licenses/MIT.html), aka the expat license;
   note that this is different from the [X11](https://spdx.org/licenses/X11.html) license.
+
+Note that the `-only` suffix is used in the context of GPL only. At all other licenses without the suffix, it also means "only this version".
 
 Similarly, here are some [free cultural works](http://creativecommons.org/freeworks) licenses
 (typically used for works other than software):
@@ -75,17 +77,18 @@ know you *can* do it.
 
 SPDX license expressions also support a "+" suffix after a license
 identifier; the "+" means "this license or any later version".
-For example, you can express "GNU General Public License (GPL) version
-2.0 or later" using the SPDX license expression "GPL-2.0+".
+For example, you can express "Apache License 2.0 or later" using the SPDX license expression "Apache-2.0+".
+In the case of GPL, it's handled differently ([since SPDX License List 3.0](https://spdx.org/news/news/2018/01/license-list-30-released)):
+GPL-2.0-or-later means "GNU General Public License (GPL) version 2.0 or later".
 
 You can also use three different operators to combine license expressions
 to create other license expressions:
 
 * "OR": Recipients can choose between two or more licenses.
-  For example, "(LGPL-2.1 OR MIT OR BSD-3-Clause)" means recipients can choose between any of those three licenses.
+  For example, "(LGPL-2.1-only OR MIT OR BSD-3-Clause)" means recipients can choose between any of those three licenses.
 * "AND": Recipients are required to simultaneously comply with two or more licenses.
-  For example, "(LGPL-2.1 AND MIT AND BSD-2-Clause)" means recipients must comply with all three licenses.
-* "WITH": Add the following named exception.  For example, "(GPL-3.0+ WITH Classpath-exception-2.0)"
+  For example, "(LGPL-2.1-only AND MIT AND BSD-2-Clause)" means recipients must comply with all three licenses.
+* "WITH": Add the following named exception.  For example, "(GPL-3.0-or-later WITH Classpath-exception-2.0)"
   means recipients must comply with the GPL version 3.0 or later with the Classpath 2.0 license exception.
   See the [SPDX license exceptions list](https://spdx.org/licenses/exceptions-index.html) for the list of
   standard names for license exceptions.
@@ -127,7 +130,7 @@ There are many tags defined in the SPDX specification, but many of them may not 
 Note that unlike license expressions, tag names are case-sensitive.
 A few especially important or useful tags are:
 
-* SPDXVersion: The version of the spec used, normally "SPDX-2.0".
+* SPDXVersion: The version of the spec used, normally "SPDX-2.1".
 * DataLicense: The license for the license data itself (!); normally this is "CC0-1.0".
   Note that this is *not* the license for the software or data being packaged.
 * Creator: Who or what created this SPDX file (not the package creator).  This is in one of 3 formats:
@@ -148,7 +151,7 @@ the license information can be shared with everyone,
 it describes the Foo package created by David A. Wheeler, it has the given project home page, and
 the package maintainers declare that all the software in this package is released using the MIT license:
 
-    SPDXVersion: SPDX-2.0
+    SPDXVersion: SPDX-2.1
     DataLicense: CC0-1.0
     PackageName: Foo
     PackageOriginator: David A. Wheeler
@@ -281,14 +284,14 @@ since all of these licenses are very common and can be combined into larger work
 * [Apache-2.0](https://spdx.org/licenses/Apache-2.0.html).
   This is a permissive license but includes an express grant of patent rights from contributors to users;
   this may be useful if you have concerns about patents in the project.
-* [LGPL-2.1+](https://spdx.org/licenses/LGPL-2.0.html).
+* [LGPL-2.1-or-later](https://spdx.org/licenses/LGPL-2.1.html).
   This is a common weakly protective license, which ensures that those who get the executable of the
   software can also get the source code, but allows the software to be used in larger proprietary works.
   A plausible alternative for this purpose is [LGPL-3.0+](https://spdx.org/licenses/LGPL-3.0.html).
-* [GPL-2.0+](https://spdx.org/licenses/GPL-2.0.html).
+* [GPL-2.0-or-later](https://spdx.org/licenses/GPL-2.0.html).
   This is a common strongly protective license, which ensures that those who get the executable of the
-  software can also get the source code.  Selecting "GPL-3.0+" is also a reasonable choice, but is incompatible
-  with programs that are GPL-2.0 only.  GPL-2.0 only also has compatibility issues with
+  software can also get the source code.  Selecting "GPL-3.0-or-later" is also a reasonable choice, but is incompatible
+  with programs that are GPL-2.0-only.  GPL-2.0-only also has compatibility issues with
   [Apache-2.0](https://spdx.org/licenses/Apache-2.0.html).
 
 The list above is extremely similar to the recommendations in GitHub's [ChooseALicense.com](http://choosealicense.com/).
