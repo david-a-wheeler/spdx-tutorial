@@ -78,8 +78,21 @@ know you *can* do it.
 SPDX license expressions also support a "+" suffix after a license
 identifier; the "+" means "this license or any later version".
 For example, you can express "Apache License 2.0 or later" using the SPDX license expression "Apache-2.0+".
-In the case of GPL, it's handled differently ([since SPDX License List 3.0](https://spdx.org/news/news/2018/01/license-list-30-released)):
-GPL-2.0-or-later means "GNU General Public License (GPL) version 2.0 or later".
+
+There is a special case involving "+": GNU licenses (such as the GPL)
+are handled specially ([since SPDX License List 3.0](https://spdx.org/news/news/2018/01/license-list-30-released)) and do not use the "+" any more.
+For example, GPL-2.0-or-later means "GNU General Public License (GPL)
+version 2.0 or later", instead of using "+".
+The reason for this special case is
+that the older expression "GPL-2.0" was not always used to mean
+"only version 2", even though it should have been,
+so that expression became ambiguous.
+I suggest that if you know that software uses the GPL-2.0 license, but have
+not determined if "or later" applies, you should
+consider using the obsolete "GPL-2.0" marking.
+On the other hand, if you're marking software you release yourself,
+please provide a more precise license expression so that everyone
+else will know exactly what they're allowed to do.
 
 You can also use three different operators to combine license expressions
 to create other license expressions:
@@ -272,6 +285,11 @@ Indeed, the same person or organization may
 chose different licenses for different projects, depending on their goals for the project.
 SPDX makes it possible to capture this licensing information in a precise and automated way.
 
+Since this is a personal essay, I can provide you with a few specific
+recommendations - and why I recommend them.
+That said, at this point these are personal recommendations... treat them
+as such.
+
 I (David A. Wheeler) recommend that you primarily pick from one of the following SPDX license expressions
 when releasing open source software,
 since all of these licenses are very common and can be combined into larger works (they are
@@ -313,22 +331,38 @@ it is often impractical to use at today's Internet scale due to its "obnoxious a
 SPDX solves this problem of ambiguity; instead of saying "BSD license" (which is dangerously vague), you can use
 a precise SPDX license expression.  SPDX can make licenses in this family much easier for everyone to use and understand.
 
-I recommend that people *not* use [CC0-1.0](https://spdx.org/licenses/CC0-1.0.html) for software,
+The [CC0-1.0](https://spdx.org/licenses/CC0-1.0.html) license (aka "CC0") essentially releases the material to the (copyright) public domain.
+That means that any recipient can do practically anything they want to do with it.
+In jurisdictions where releasing to the public domain isn't technically possible, the license does the best it can.
+There are a number of projects (including those from the US government)
+that are released under the CC0 license,
+and the Free Software Foundation (FSF) says,
+["If you want to release your work to the public domain, we recommend you use CC0."](https://www.gnu.org/licenses/license-list.html#CC0)
+(see also the
+[related announcement from Creative Commons](https://creativecommons.org/2011/04/15/using-cc0-for-public-domain-software/)).
+The CC0 does a number of good things, in particular, it expressly states that it disclaims warranties (including warranties for fitness for a particular purpose) to the extent allowed under law
+(see [section 4(b)](https://creativecommons.org/publicdomain/zero/1.0/legalcode); my thanks for those who pointed this out to me).
+That said, I personally have a weak recommendation that people *not* use [CC0-1.0](https://spdx.org/licenses/CC0-1.0.html) when releasing software,
 especially if you're not a government employee.
-[CC0-1.0](https://spdx.org/licenses/CC0-1.0.html) essentially releases material to the public domain,
-and thus fails to include disclaimers of warranty and merchantability.
-These disclaimers provide a small amount of legal protection at no cost; you should use them
-when releasing software.
-Governments sometimes use CC0, but for them these legal protections are less important
-(it's harder to sue governments).
+My reasoning is that the CC0 has a slightly weaker defense against
+liability suits.
+CC0 does not have a statement like
+"in no event shall (authors or copyright holders) be held liable...",
+(as the MIT, GPL, and many other licenses do) and it disclaims
+all copyright.
+I think that this kind of disclaimer, combined with *some* retained copyright
+to give it legal strength,
+can provide a small amount of additional legal protection at no cost.
+Governments sometimes use CC0, but for them this additional legal protection is less important (it's harder to sue governments).
 I recommend using the [MIT](https://spdx.org/licenses/MIT.html) license instead for software.
 Reasonable alternatives if you want *short* permissive software licenses include
-[BSD-2-Clause (the BSD 2-clause "Simplified" License)](https://spdx.org/licenses/BSD-2-Clause.html),
-[BSD-3-Clause (BSD 3-clause "New" or "Revised" License)](https://spdx.org/licenses/BSD-3-Clause.html),
-[0BSD (BSD Zero Clause License)](https://spdx.org/licenses/0BSD.html), and
-the [Unlicense](https://spdx.org/licenses/Unlicense.html).
+[BSD-2-Clause (the BSD 2-clause "Simplified" License)](https://spdx.org/licenses/BSD-2-Clause.html) and
+[BSD-3-Clause (BSD 3-clause "New" or "Revised" License)](https://spdx.org/licenses/BSD-3-Clause.html).
+That said, this is a weak personal recommendation based on a legal technicality.
+There's certainly no problem in using software released under CC0.
+In addition, many people and organizations use and release software using CC0.
 
-[Creative Commons recommend not using Creative Commons licenses for software](https://wiki.creativecommons.org/wiki/Frequently_Asked_Questions#Can_I_apply_a_Creative_Commons_license_to_software.3F),
+[Creative Commons recommend not using Creative Commons licenses for software](https://wiki.creativecommons.org/wiki/Frequently_Asked_Questions#Can_I_apply_a_Creative_Commons_license_to_software.3F) other than the CC0,
 and I agree with their assessment.
 For example, their licenses do not address the issues of source code distribution or patents.
 The [CC0-1.0](https://spdx.org/licenses/CC0-1.0.html), [CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html),
