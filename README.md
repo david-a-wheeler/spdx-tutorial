@@ -287,8 +287,8 @@ SPDX makes it possible to capture this licensing information in a precise and au
 
 Since this is a personal essay, I can provide you with a few specific
 recommendations - and why I recommend them.
-That said, at this point these are personal recommendations... treat them
-as such.
+That said, at this point these are personal recommendations,
+I am not a lawyer, and I am not your lawyer... so treat them as such.
 
 I (David A. Wheeler) recommend that you primarily pick from one of the following SPDX license expressions
 when releasing open source software,
@@ -340,21 +340,20 @@ and the Free Software Foundation (FSF) says,
 ["If you want to release your work to the public domain, we recommend you use CC0."](https://www.gnu.org/licenses/license-list.html#CC0)
 (see also the
 [related announcement from Creative Commons](https://creativecommons.org/2011/04/15/using-cc0-for-public-domain-software/)).
-The CC0 does a number of good things, in particular, it expressly states that it disclaims warranties (including warranties for fitness for a particular purpose) to the extent allowed under law
-(see [section 4(b)](https://creativecommons.org/publicdomain/zero/1.0/legalcode); my thanks for those who pointed this out to me).
+The CC0 does a number of good things.
+For example, CC0 expressly states that it disclaims warranties (including warranties for fitness for a particular purpose) to the extent allowed under law (see [section 4(b)](https://creativecommons.org/publicdomain/zero/1.0/legalcode); my thanks to those who pointed me to this information).
 That said, I personally have a weak recommendation that people *not* use [CC0-1.0](https://spdx.org/licenses/CC0-1.0.html) when releasing software,
 especially if you're not a government employee.
 My reasoning is that the CC0 has a slightly weaker defense against
-liability suits.
+liability lawsuits.
 CC0 does not have a statement like
 "in no event shall (authors or copyright holders) be held liable...",
-(as the MIT, GPL, and many other licenses do) and it disclaims
-all copyright.
-I think that this kind of disclaimer, combined with *some* retained copyright
+(as the MIT, GPL, and many other licenses do) and it disclaims all copyright.
+I think that this kind of statement, combined with *some* retained copyright
 to give it legal strength,
 can provide a small amount of additional legal protection at no cost.
 Governments sometimes use CC0, but for them this additional legal protection is less important (it's harder to sue governments).
-I recommend using the [MIT](https://spdx.org/licenses/MIT.html) license instead for software.
+As a result, I recommend using the [MIT](https://spdx.org/licenses/MIT.html) license instead of CC0 for software.
 Reasonable alternatives if you want *short* permissive software licenses include
 [BSD-2-Clause (the BSD 2-clause "Simplified" License)](https://spdx.org/licenses/BSD-2-Clause.html) and
 [BSD-3-Clause (BSD 3-clause "New" or "Revised" License)](https://spdx.org/licenses/BSD-3-Clause.html).
