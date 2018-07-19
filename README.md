@@ -159,7 +159,7 @@ the package maintainers declare that all the software in this package is release
     PackageLicenseDeclared: MIT
 
 There are many more tags you can use.  They are explained in the full
-[SPDX specification](https://spdx.org/SPDX-specifications/spdx-version-2.0).
+[SPDX specification](https://spdx.org/specifications).
 
 Now, a personal note.
 Many of the tags and features in the SPDX file specification
