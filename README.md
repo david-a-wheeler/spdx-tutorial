@@ -194,10 +194,10 @@ need that additional information when they do legal review, and that's what thos
 If you are in that more complicated circumstance, see the SPDX site for information about tools that can help you.
 
 The SPDX specification doesn't specify a file extension or file naming convention.
-I personally recommend using ".spdx" for a SDPX file in tag:value format (as described here),
-and using ".rdf" for a SDPX file in RDF+XML format
+I personally recommend using ".spdx" for a SPDX file in tag:value format (as described here),
+and using ".rdf" for a SPDX file in RDF+XML format
 ([this appears to be a best practice](https://bugs.linuxfoundation.org/show_bug.cgi?id=1329)).
-When combining SDPX files together people often use the project name as the filename.
+When combining SPDX files together people often use the project name as the filename.
 Personally, I think having a file named
 "LICENSE.spdx" at the top level would be perfectly reasonable when including a SPDX file inside a single project.
 To my knowledge SPDX (in either format) has not yet been formally registered as a MIME type.
@@ -376,7 +376,7 @@ I recommend in most cases against using the
 in part because they are not [GPL-compatible](http://www.dwheeler.com/essays/gpl-compatible.html).
 
 You may disagree with my license recommendations, or a have a special circumstance.  That's okay.
-SDPX won't decide a license for you, but SPDX does make it easy for everyone to know what license(s) were selected.
+SPDX won't decide a license for you, but SPDX does make it easy for everyone to know what license(s) were selected.
 
 ## More information
 
