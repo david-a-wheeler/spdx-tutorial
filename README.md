@@ -159,7 +159,7 @@ A few especially important or useful tags are:
   obtained from an external source, such as the package website.
    
 For example, a SPDX file with the following lines states the following:
-this package uses SPDX specification version 2.0 (the current version),
+this package uses SPDX specification version 2.1 (the current version),
 the license information can be shared with everyone,
 it describes the Foo package created by David A. Wheeler, it has the given project home page, and
 the package maintainers declare that all the software in this package is released using the MIT license:
