@@ -1,9 +1,14 @@
 # SPDX Tutorial
 
 Software Package Data Exchange (SPDX) is a standard format
-for communicating the components, licenses,
-and copyrights associated with software packages; it includes
+for communicating the components of software packages,
+including information about them including licenses
+copyrights.
+It includes
 several mechanisms that are especially useful for open source software.
+SPDX is a formally-approved international standard
+(as ISO/IEC 5962:2021), and its
+[specification is freely available](https://spdx.dev/specifications/).
 If you're developing open source software,
 a developer who is considering the use of some open source software,
 or someone who has to investigate if
@@ -130,7 +135,15 @@ Here I'll especially focus on how software developers can use them.
 
 ## SPDX Files
 
-SPDX files are a way to capture and exchange license information
+If you want to *generate* a full SPDX file that identifies all the
+components in system, aka its "software bill of materials" (SBOM),
+it's probably best to use a tool to generate SDPX files.
+One example is [spdx-sbom-generator](https://github.com/spdx/spdx-sbom-generator))
+That said, it's good to know what SPDX files contain, especially if
+you want to do more than what existing tools do.
+
+SPDX files are a way to capture and exchange information
+about some software and its dependencies, such as license information,
 in a way that is independent of the programming language(s) and package
 manager(s) used.
 The SPDX specification actually supports two formats: tag:value and RDF/XML.
