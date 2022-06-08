@@ -2,8 +2,7 @@
 
 Software Package Data Exchange (SPDX) is a standard format
 for communicating the components of software packages,
-including information about them including licenses
-copyrights.
+including information about them e.g licenses, copyrights, e.t.c.
 It includes
 several mechanisms that are especially useful for open source software.
 SPDX is a formally-approved international standard
