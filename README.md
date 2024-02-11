@@ -311,9 +311,13 @@ since all of these licenses are very common and can be combined into larger work
 * [MIT](https://spdx.org/licenses/MIT.html).
   This is a simple permissive license, useful if you want people to do whatever they want with the software;
   it provides some simple legal protections for developers.
+  [MIT license expressly grants all necessary permissions, including copyright and patents](https://opensource.com/article/18/3/patent-grant-mit-license).
 * [Apache-2.0](https://spdx.org/licenses/Apache-2.0.html).
-  This is a permissive license but includes an express grant of patent rights from contributors to users;
-  this may be useful if you have concerns about patents in the project.
+  This is a permissive license but includes an expressly spelled ouot grant of patent rights from contributors to users;
+  this may be useful if you have special concerns about patents in the project.
+  There are some complications when combining Apache-2.0 and GPL-2.0-only in a
+  single project, so I personally prefer MIT,
+  but Apache-2.0 is a *fine* license.
 * [LGPL-2.1-or-later](https://spdx.org/licenses/LGPL-2.1.html).
   This is a common weakly protective license, which ensures that those who get the executable of the
   software can also get the source code, but allows the software to be used in larger proprietary works.
