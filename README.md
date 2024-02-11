@@ -378,11 +378,14 @@ about using software under this license; you should first consider
 whether the licensor might want to sue you for patent infringement.
 If the developer is refusing users patent licenses, the program is
 in effect a trap for users and users should avoid the program."
-The CC0 also has a weaker defense against liability lawsuits
+[Fedora announced in 2022 a policy change to allow CC0 for content but *not* for code](https://lists.fedoraproject.org/archives/list/legal@lists.fedoraproject.org/thread/RRYM3CLYJYW64VSQIXY6IF3TCDZGS6LM/), due
+to dangers involving patents.
+In addition to this failure to address patents,
+CC0 also has a weaker defense against liability lawsuits
 (it lacks a statement like
 "in no event shall (authors or copyright holders) be held liable...").
-Another license would be a far better choice,
-As a result, I recommend using the [MIT](https://spdx.org/licenses/MIT.html) license instead of CC0 for software, as it's a small yet widely-used permissive
+In short: another license would be a far better choice for software.
+I recommend using the [MIT](https://spdx.org/licenses/MIT.html) license instead of CC0 for software, as it's a small yet widely-used permissive
 license.
 The [MIT license expressly grants all necessary permissions, including copyright and patents](https://opensource.com/article/18/3/patent-grant-mit-license).
 Reasonable alternatives if you want *short* permissive software licenses include
