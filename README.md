@@ -344,38 +344,61 @@ it is often impractical to use at today's Internet scale due to its "obnoxious a
 SPDX solves this problem of ambiguity; instead of saying "BSD license" (which is dangerously vague), you can use
 a precise SPDX license expression.  SPDX can make licenses in this family much easier for everyone to use and understand.
 
-The [CC0-1.0](https://spdx.org/licenses/CC0-1.0.html) license (aka "CC0") essentially releases the material to the (copyright) public domain.
-That means that any recipient can do practically anything they want to do with it.
-In jurisdictions where releasing to the public domain isn't technically possible, the license does the best it can.
-There are a number of projects (including those from the US government)
-that are released under the CC0 license,
-and the Free Software Foundation (FSF) says,
-["If you want to release your work to the public domain, we recommend you use CC0."](https://www.gnu.org/licenses/license-list.html#CC0)
-(see also the
-[related announcement from Creative Commons](https://creativecommons.org/2011/04/15/using-cc0-for-public-domain-software/)).
-The CC0 does a number of good things.
-For example, CC0 expressly states that it disclaims warranties (including warranties for fitness for a particular purpose) to the extent allowed under law (see [section 4(b)](https://creativecommons.org/publicdomain/zero/1.0/legalcode); my thanks to those who pointed me to this information).
-That said, I personally have a weak recommendation that people *not* use [CC0-1.0](https://spdx.org/licenses/CC0-1.0.html) when releasing software,
-especially if you're not a government employee.
-My reasoning is that the CC0 has a slightly weaker defense against
-liability lawsuits.
-CC0 does not have a statement like
-"in no event shall (authors or copyright holders) be held liable...",
-(as the MIT, GPL, and many other licenses do) and it disclaims all copyright.
-I think that this kind of statement, combined with *some* retained copyright
-to give it legal strength,
-can provide a small amount of additional legal protection at no cost.
-Governments sometimes use CC0, but for them this additional legal protection is less important (it's harder to sue governments).
-As a result, I recommend using the [MIT](https://spdx.org/licenses/MIT.html) license instead of CC0 for software.
+The [CC0-1.0](https://spdx.org/licenses/CC0-1.0.html) license (aka "CC0") essentially releases the material to the public domain for purposes of only copyright.
+The CC0 is generally fine for materials like documentation, but
+I *strongly* recommend that you do *not* use CC0 to release software.
+The CC0 is not approved as an open source software license by the open source
+initiative (OSI), and the Free Software Foundation (FSF) warns that users be
+cautious about software with this license.
+It's *possible* to release software using the CC0,
+but the CC0 creates a dangerous potential trap for software users.
+Understanding the CC0 trap requires understanding the CC0.
+The CC0 license states that as far as *copyright* laws go,
+any recipient can do practically anything they want to do with it.
+In jurisdictions where releasing to the public domain under copyright law isn't technically possible, the CC0 license does the best it can.
+The CC0 also disclaims warranties (including warranties for fitness for a particular purpose) to the extent allowed under law (see [section 4(b)](https://creativecommons.org/publicdomain/zero/1.0/legalcode); my thanks to those who pointed me to this information).
+There *are* some software projects (including those from the US government)
+that are released under the CC0 license.
+The problem, however, is that there are many laws that govern
+software, *not* just copyright.
+The [CC0 license has *not* been approved by the Open Source Initiative (OSI)](https://opensource.org/faq/#cc-zero).
+As the
+[Creative Commons explains in their CC0 FAQ](https://wiki.creativecommons.org/wiki/CC0_FAQ#May_I_apply_CC0_to_computer_software.3F_If_so.2C_is_there_a_recommended_implementation.3F),
+CC0 "expressly does *not* license or otherwise affect any
+patent rights you may have".
+I think patents should not apply to software (just like they don't apply to
+the text of books), but many jurisdictions allow this misuse, and
+real-world software licenses must deal with the world as it is.
+As the
+[FSF explains about CC0](https://www.gnu.org/licenses/license-list.html#CC0),
+"For works of software [CC0] is not recommended, as CC0 has a term
+expressly stating it does not grant you any patent licenses.
+Because of this lack of patent grant, we encourage you to be careful
+about using software under this license; you should first consider
+whether the licensor might want to sue you for patent infringement.
+If the developer is refusing users patent licenses, the program is
+in effect a trap for users and users should avoid the program."
+[Fedora announced in 2022 a policy change to allow CC0 for content but *not* for code](https://lists.fedoraproject.org/archives/list/legal@lists.fedoraproject.org/thread/RRYM3CLYJYW64VSQIXY6IF3TCDZGS6LM/), due
+to dangers involving patents.
+In addition to this failure to address patents,
+CC0 also has a weaker defense against liability lawsuits
+(it lacks a statement like
+"in no event shall (authors or copyright holders) be held liable...").
+In short: another license would be a far better choice for software.
+I recommend using the [MIT](https://spdx.org/licenses/MIT.html) license instead of CC0 for software, as it's a small yet widely-used permissive
+license.
+The [MIT license expressly grants all necessary permissions, including copyright and patents](https://opensource.com/article/18/3/patent-grant-mit-license).
 Reasonable alternatives if you want *short* permissive software licenses include
-[BSD-2-Clause (the BSD 2-clause "Simplified" License)](https://spdx.org/licenses/BSD-2-Clause.html) and
-[BSD-3-Clause (BSD 3-clause "New" or "Revised" License)](https://spdx.org/licenses/BSD-3-Clause.html).
-That said, this is a weak personal recommendation based on a legal technicality.
-There's certainly no problem in using software released under CC0.
-In addition, many people and organizations use and release software using CC0.
+[BSD-2-Clause (the BSD 2-clause "Simplified" License)](https://spdx.org/licenses/BSD-2-Clause.html),
+[BSD-3-Clause (BSD 3-clause "New" or "Revised" License)](https://spdx.org/licenses/BSD-3-Clause.html),
+and
+[0BSD](https://opensource.org/license/0bsd/).
+The [Apache License 2.0](https://spdx.org/licenses/Apache-2.0.html) is also
+a reasonable choice as a permissive license, though it's longer and there are
+some complications when combining it with GPL version 2.0.
 
-[Creative Commons recommend not using Creative Commons licenses for software](https://wiki.creativecommons.org/wiki/Frequently_Asked_Questions#Can_I_apply_a_Creative_Commons_license_to_software.3F) other than the CC0,
-and I agree with their assessment.
+[Creative Commons recommends not using Creative Commons licenses for software](https://wiki.creativecommons.org/wiki/Frequently_Asked_Questions#Can_I_apply_a_Creative_Commons_license_to_software.3F) other than the CC0 (and as noted above, even the CC0 has serious problems).
+I agree with their assessment.
 For example, their licenses do not address the issues of source code distribution or patents.
 The [CC0-1.0](https://spdx.org/licenses/CC0-1.0.html), [CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html),
 and [CC-BY-SA-4.0](https://spdx.org/licenses/CC-BY-SA-4.0.html) licenses are just
@@ -383,7 +406,7 @@ fine for other purposes, such as ordinary textual and artistic works.
 SPDX does have license identifiers for the "no derivatives" and "non-commercial" Creative Commons licenses,
 but note that by definition these are not OSS nor [free culture](https://creativecommons.org/freeworks) licenses.
 
-I recommend in most cases against using the
+I recommend in most cases *against* using the
 [BSD-4-Clause (BSD 4-clause "Original" or "Old" License)](https://spdx.org/licenses/BSD-4-Clause.html) and
 [EPL-1.0 (Eclipse Public License version 1.0)](https://spdx.org/licenses/EPL-1.0.html) licenses,
 in part because they are not [GPL-compatible](http://www.dwheeler.com/essays/gpl-compatible.html).
