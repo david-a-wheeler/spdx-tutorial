@@ -397,7 +397,7 @@ The [Apache License 2.0](https://spdx.org/licenses/Apache-2.0.html) is also
 a reasonable choice as a permissive license, though it's longer and there are
 some complications when combining it with GPL version 2.0.
 
-[Creative Commons recommends not using Creative Commons licenses for software](https://wiki.creativecommons.org/wiki/Frequently_Asked_Questions#Can_I_apply_a_Creative_Commons_license_to_software.3F) other than the CC0 (and as noted above, even the CC0 has serious problems),
+[Creative Commons recommends not using Creative Commons licenses for software](https://wiki.creativecommons.org/wiki/Frequently_Asked_Questions#Can_I_apply_a_Creative_Commons_license_to_software.3F) other than the CC0 (and as noted above, even the CC0 has serious problems).
 I agree with their assessment.
 For example, their licenses do not address the issues of source code distribution or patents.
 The [CC0-1.0](https://spdx.org/licenses/CC0-1.0.html), [CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html),
