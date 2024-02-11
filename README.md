@@ -344,14 +344,14 @@ it is often impractical to use at today's Internet scale due to its "obnoxious a
 SPDX solves this problem of ambiguity; instead of saying "BSD license" (which is dangerously vague), you can use
 a precise SPDX license expression.  SPDX can make licenses in this family much easier for everyone to use and understand.
 
-The [CC0-1.0](https://spdx.org/licenses/CC0-1.0.html) license (aka "CC0") essentially releases the material to the public domain for purposes of copyright.
-The CC0 is fine for materials like documentation, but
-I recommend that you do *not* use CC0 to release software.
-The CC) is not approved as an open source software license by the open source
-initiative (OSI) and the Free Software Foundation (FSF) warns about being
-careful with this license.
-It's possible to release software using the CC0,
-but it creates a dangerous potential trap for software users.
+The [CC0-1.0](https://spdx.org/licenses/CC0-1.0.html) license (aka "CC0") essentially releases the material to the public domain for purposes of only copyright.
+The CC0 is generally fine for materials like documentation, but
+I *strongly* recommend that you do *not* use CC0 to release software.
+The CC0 is not approved as an open source software license by the open source
+initiative (OSI), and the Free Software Foundation (FSF) warns that users be
+cautious about software with this license.
+It's *possible* to release software using the CC0,
+but the CC0 creates a dangerous potential trap for software users.
 Understanding the CC0 trap requires understanding the CC0.
 The CC0 license states that as far as *copyright* laws go,
 any recipient can do practically anything they want to do with it.
@@ -384,6 +384,7 @@ The CC0 also has a weaker defense against liability lawsuits
 Another license would be a far better choice,
 As a result, I recommend using the [MIT](https://spdx.org/licenses/MIT.html) license instead of CC0 for software, as it's a small yet widely-used permissive
 license.
+The [MIT license expressly grants all necessary permissions, including copyright and patents](https://opensource.com/article/18/3/patent-grant-mit-license).
 Reasonable alternatives if you want *short* permissive software licenses include
 [BSD-2-Clause (the BSD 2-clause "Simplified" License)](https://spdx.org/licenses/BSD-2-Clause.html) and
 [BSD-3-Clause (BSD 3-clause "New" or "Revised" License)](https://spdx.org/licenses/BSD-3-Clause.html),
