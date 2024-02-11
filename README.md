@@ -361,14 +361,14 @@ There *are* some software projects (including those from the US government)
 that are released under the CC0 license.
 The problem, however, is that there are many laws that govern
 software, *not* just copyright.
-The CC0 license has *not* been approved by the Open Source Initiative
-(OSI), however.
+The [CC0 license has *not* been approved by the Open Source Initiative (OSI)](https://opensource.org/faq/#cc-zero).
 As the
 [Creative Commons explains in their CC0 FAQ](https://wiki.creativecommons.org/wiki/CC0_FAQ#May_I_apply_CC0_to_computer_software.3F_If_so.2C_is_there_a_recommended_implementation.3F),
 CC0 "expressly does *not* license or otherwise affect any
 patent rights you may have".
 I think patents should not apply to software (just like they don't apply to
-books), but many jurisdictions allow this misuse.
+the text of books), but many jurisdictions allow this misuse, and
+real-world software licenses must deal with the world as it is.
 As the
 [FSF explains about CC0](https://www.gnu.org/licenses/license-list.html#CC0),
 "For works of software [CC0] is not recommended, as CC0 has a term
