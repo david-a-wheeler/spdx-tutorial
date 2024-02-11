@@ -389,7 +389,7 @@ I recommend using the [MIT](https://spdx.org/licenses/MIT.html) license instead 
 license.
 The [MIT license expressly grants all necessary permissions, including copyright and patents](https://opensource.com/article/18/3/patent-grant-mit-license).
 Reasonable alternatives if you want *short* permissive software licenses include
-[BSD-2-Clause (the BSD 2-clause "Simplified" License)](https://spdx.org/licenses/BSD-2-Clause.html) and
+[BSD-2-Clause (the BSD 2-clause "Simplified" License)](https://spdx.org/licenses/BSD-2-Clause.html),
 [BSD-3-Clause (BSD 3-clause "New" or "Revised" License)](https://spdx.org/licenses/BSD-3-Clause.html),
 and
 [0BSD](https://opensource.org/license/0bsd/).
