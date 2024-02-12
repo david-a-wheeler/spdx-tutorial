@@ -387,15 +387,19 @@ In addition to this failure to address patents,
 CC0 also has a weaker defense against liability lawsuits
 (it lacks a statement like
 "in no event shall (authors or copyright holders) be held liable...").
-In short: another license would be a far better choice for software.
-I recommend using the [MIT](https://spdx.org/licenses/MIT.html) license instead of CC0 for software, as it's a small yet widely-used permissive
+
+In short: another license would be a far better choice for software. If your intention is
+to release code with the least amount of restrictions, with no attribution requirement,
+you can release your code under the OSI-approved 
+[0BSD](https://opensource.org/license/0bsd/) license.
+
+A recommended simple software licenses with attribution requirement is the
+[MIT](https://spdx.org/licenses/MIT.html) license, as it's a small yet widely-used permissive
 license.
 The [MIT license expressly grants all necessary permissions, including copyright and patents](https://opensource.com/article/18/3/patent-grant-mit-license).
 Reasonable alternatives if you want *short* permissive software licenses include
 [BSD-2-Clause (the BSD 2-clause "Simplified" License)](https://spdx.org/licenses/BSD-2-Clause.html),
-[BSD-3-Clause (BSD 3-clause "New" or "Revised" License)](https://spdx.org/licenses/BSD-3-Clause.html),
-and
-[0BSD](https://opensource.org/license/0bsd/).
+and [BSD-3-Clause (BSD 3-clause "New" or "Revised" License)](https://spdx.org/licenses/BSD-3-Clause.html).
 The [Apache License 2.0](https://spdx.org/licenses/Apache-2.0.html) is also
 a reasonable choice as a permissive license, though it's longer and there are
 some complications when combining it with GPL version 2.0.
