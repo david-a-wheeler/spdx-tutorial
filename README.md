@@ -313,7 +313,7 @@ since all of these licenses are very common and can be combined into larger work
   it provides some simple legal protections for developers.
   [MIT license expressly grants all necessary permissions, including copyright and patents](https://opensource.com/article/18/3/patent-grant-mit-license).
 * [Apache-2.0](https://spdx.org/licenses/Apache-2.0.html).
-  This is a permissive license but includes an expressly spelled ouot grant of patent rights from contributors to users;
+  This is a permissive license but includes an expressly spelled out grant of patent rights from contributors to users;
   this may be useful if you have special concerns about patents in the project.
   There are some complications when combining Apache-2.0 and GPL-2.0-only in a
   single project, so I personally prefer MIT,
