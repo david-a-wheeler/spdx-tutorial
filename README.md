@@ -33,7 +33,7 @@ This tutorial will also discuss how to use
 SPDX license identifiers are the heart of SPDX.
 A license identifier is a human readable short text string that uniquely identifies a license.
 Here are some SPDX license identifiers (in alphabetical order) for some widely-used
-[free](http://www.gnu.org/philosophy/free-sw.en.html)/libre/[open source software](https://opensource.org/osd-annotated)
+[free](https://www.gnu.org/philosophy/free-sw.en.html)/libre/[open source software](https://opensource.org/osd-annotated)
 licenses, followed by what the identifiers mean:
 
 * AGPL-3.0-only : [GNU Affero General Public License v3.0](https://spdx.org/licenses/AGPL-3.0.html)
@@ -49,7 +49,7 @@ licenses, followed by what the identifiers mean:
 
 Note that the `-only` suffix is used in the context of GPL only. At all other licenses without the suffix, it also means "only this version".
 
-Similarly, here are some [free cultural works](http://creativecommons.org/freeworks) licenses
+Similarly, here are some [free cultural works](https://creativecommons.org/public-domain/freeworks/) licenses
 (typically used for works other than software):
 
 * CC-BY-3.0 : [Creative Commons Attribution 3.0](https://spdx.org/licenses/CC-BY-3.0.html)
@@ -84,7 +84,7 @@ identifier; the "+" means "this license or any later version".
 For example, you can express "Apache License 2.0 or later" using the SPDX license expression "Apache-2.0+".
 
 There is a special case involving "+": GNU licenses (such as the GPL)
-are handled specially ([since SPDX License List 3.0](https://spdx.org/news/news/2018/01/license-list-30-released)) and do not use the "+" any more.
+are handled specially ([since SPDX License List 3.0](https://spdx.dev/license-list-3-0-released/)) and do not use the "+" any more.
 For example, GPL-2.0-or-later means "GNU General Public License (GPL)
 version 2.0 or later", instead of using "+".
 The reason for this special case is
@@ -233,7 +233,7 @@ The traditional way is annoying; it involves
 embedding large quantities of legalese in your source code headers.
 SPDX can help, because it can replace many lines of legal mumbo-jumbo, in every file, with a simple clear line of text.
 I think best practice is to put it right under a simple copyright notice
-(see [Ben Balter's article about copyright notices for open source projects](http://ben.balter.com/2015/06/03/copyright-notices-for-websites-and-open-source-projects/);
+(see [Ben Balter's article about copyright notices for open source projects](https://ben.balter.com/2015/06/03/copyright-notices-for-websites-and-open-source-projects/);
 he focuses on project-wide notices, but the principles still apply).
 
 The recommended way is to add a case-sensitive tag
@@ -280,13 +280,13 @@ What SPDX does is create a simple format for licenses that is
 ## License recommendations
 
 Make *sure* you include a license on any software you're releasing.
-[Having no license does not mean you're opting out of copyright law](http://choosealicense.com/no-license/).
+[Having no license does not mean you're opting out of copyright law](https://choosealicense.com/no-permission/).
 Generally speaking, around the world the absence of a license means that default copyright laws apply.
 This normally means that nobody else may reproduce, distribute, or create derivative works from your work.
 There are exceptions due to "Fair Use" (US) and "Fair Dealing" (Europe), but these are far weaker than you might think.
 Before 1976 omitting a copyright statement meant there was no federal copyright in the US,
 but that simply isn't true today.
-[Simon Phipps' "Why all software needs a license"](http://www.infoworld.com/article/2839560/open-source-software/sticking-a-license-on-everything.html)
+[Simon Phipps' "Why all software needs a license"](https://www.infoworld.com/article/2250085/sticking-a-license-on-everything.html)
 further explains why software needs a license.
 The biggest common licensing mistake is failing to put a license on software at all.
 
@@ -305,15 +305,15 @@ I am not a lawyer, and I am not your lawyer... so treat them as such.
 I (David A. Wheeler) recommend that you primarily pick from one of the following SPDX license expressions
 when releasing open source software,
 since all of these licenses are very common and can be combined into larger works (they are
-[GPL-compatible](http://www.dwheeler.com/essays/gpl-compatible.html) and
-[mutually compatible](http://www.dwheeler.com/essays/floss-license-slide.html)):
+[GPL-compatible](https://dwheeler.com/essays/gpl-compatible.html) and
+[mutually compatible](https://dwheeler.com/essays/floss-license-slide.html)):
 
 * [MIT](https://spdx.org/licenses/MIT.html).
   This is a simple permissive license, useful if you want people to do whatever they want with the software;
   it provides some simple legal protections for developers.
   [MIT license expressly grants all necessary permissions, including copyright and patents](https://opensource.com/article/18/3/patent-grant-mit-license).
 * [Apache-2.0](https://spdx.org/licenses/Apache-2.0.html).
-  This is a permissive license but includes an expressly spelled ouot grant of patent rights from contributors to users;
+  This is a permissive license but includes an expressly spelled out grant of patent rights from contributors to users;
   this may be useful if you have special concerns about patents in the project.
   There are some complications when combining Apache-2.0 and GPL-2.0-only in a
   single project, so I personally prefer MIT,
@@ -328,7 +328,7 @@ since all of these licenses are very common and can be combined into larger work
   with programs that are GPL-2.0-only.  GPL-2.0-only also has compatibility issues with
   [Apache-2.0](https://spdx.org/licenses/Apache-2.0.html).
 
-The list above is extremely similar to the recommendations in GitHub's [ChooseALicense.com](http://choosealicense.com/).
+The list above is extremely similar to the recommendations in GitHub's [ChooseALicense.com](https://choosealicense.com/).
 If you're just completely confused and can't decide, I recommend that you
 start with [MIT](https://spdx.org/licenses/MIT.html);
 you can release later versions (even if they include others' work) using a different license.
@@ -342,7 +342,7 @@ are perfectly good permissive licenses (and the first two are widely used).
 A historical problem with them is that there
 are many different licenses all called the "BSD license", and at least one of them
 (with SPDX license identifier "BSD-4-Clause") is obsolete, incompatible with many other licenses, and
-in my opinion (and [others](http://www.gnu.org/philosophy/bsd.en.html))
+in my opinion (and [others](https://www.gnu.org/licenses/bsd.en.html))
 it is often impractical to use at today's Internet scale due to its "obnoxious advertizing clause".
 SPDX solves this problem of ambiguity; instead of saying "BSD license" (which is dangerously vague), you can use
 a precise SPDX license expression.  SPDX can make licenses in this family much easier for everyone to use and understand.
@@ -412,20 +412,20 @@ but note that by definition these are not OSS nor [free culture](https://creativ
 I recommend in most cases *against* using the
 [BSD-4-Clause (BSD 4-clause "Original" or "Old" License)](https://spdx.org/licenses/BSD-4-Clause.html) and
 [EPL-1.0 (Eclipse Public License version 1.0)](https://spdx.org/licenses/EPL-1.0.html) licenses,
-in part because they are not [GPL-compatible](http://www.dwheeler.com/essays/gpl-compatible.html).
+in part because they are not [GPL-compatible](https://dwheeler.com/essays/gpl-compatible.html).
 
 You may disagree with my license recommendations, or a have a special circumstance.  That's okay.
 SPDX won't decide a license for you, but SPDX does make it easy for everyone to know what license(s) were selected.
 
 ## More information
 
-For more information, visit the [SPDX website](http://spdx.org/).
+For more information, visit the [SPDX website](https://spdx.org/).
 Common destinations include the
-[SPDX license list](https://spdx.org/licenses/) and the [SPDX specifications](http://spdx.org/spdx-specifications).
+[SPDX license list](https://spdx.org/licenses/) and the [SPDX specifications](https://spdx.org/specifications).
 
 ## About this tutorial
 
-This tutorial was originally developed by [David A. Wheeler](http://www.dwheeler.com).
+This tutorial was originally developed by [David A. Wheeler](https://dwheeler.com).
 It is released under the Creative Commons Attribution License 3.0 Unported (CC-BY-3.0) license or later;
 the 3.0 license is used for the SPDX specification.
 In SPDX notation, this tutorial is released under "CC-BY-3.0+"; see the
